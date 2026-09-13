@@ -45,14 +45,14 @@ export default function Footer() {
               {[
                 { id: 'home', label: 'Home' },
                 { id: 'about', label: 'About Us' },
-                { id: 'products', label: 'Our Product' },
+                { id: 'products', label: 'Our Products' },
                 { id: 'certifications', label: 'Quality Commitments' },
                 { id: 'contact', label: 'Contact Us' }
               ].map((link) => (
                 <li key={link.id}>
                   <button
                     onClick={() => handleNavClick(link.id)}
-                    className="text-[16px] hover:text-brand-copper transition-colors duration-200 cursor-pointer block"
+                    className="text-[16px] hover:text-brand-copper transition-colors duration-200 cursor-pointer block text-left"
                   >
                     {link.label}
                   </button>

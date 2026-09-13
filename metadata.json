@@ -1,0 +1,6 @@
+{
+  "name": "Metalnova Clone",
+  "description": "A clone of the Metalnova frontend using its original source code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

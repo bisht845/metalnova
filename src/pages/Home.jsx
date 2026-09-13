@@ -155,44 +155,7 @@ export default function Home() {
       id="home-page-custom"
       className="font-sans antialiased text-[#62666A] bg-white"
     >
-      {/* ================= CORPORATE VIDEO SHOWCASE ================= */}
-      <section className="bg-[#030712] py-20 border-b border-slate-900 overflow-hidden relative">
-        {/* Subtle glowing mesh and grid overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,rgba(0,210,255,0.08),transparent_70%)]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.005)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.005)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="max-w-3xl mx-auto space-y-4 mb-12">
-            <h3 className="text-2xl mt-2 sm:text-3xl font-extrabold text-[#1FD2E6] tracking-tight">
-              Metalnova
-            </h3>
-            {/* <p className="text-[16px] text-brand-copper font-light max-w-2xl mx-auto leading-relaxed">
-              Explore our state-of-the-art manufacturing facilities, precision
-              metal processing tech, and our commitment to industrial
-              excellence.
-            </p> */}
-          </div>
-
-          {/* Premium Video Container */}
-          <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden border border-slate-800/80 bg-[#080d19]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative group aspect-video flex items-center justify-center">
-            {/* <video
-              ref={ambientVideoRef}
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster={metalVideoPoster}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            >
-              <source src={heroVideoSource} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video> */}
-            <h4 className="text-2xl sm:text-3xl font-extrabold tracking-wide">
-              Coming Soon
-            </h4>
-          </div>
-        </div>
-      </section>
 
       {/* ================= HERO SECTION (PREMIUM DARK SYSTEM) ================= */}
       <section
@@ -277,11 +240,11 @@ export default function Home() {
               {/* Overlay Glass Badge */}
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
-                  Microstructural Purity
+                  Microstructural Integrity
                 </p>
                 <p className="text-[11px] text-brand-copper mt-1 font-light leading-relaxed">
-                  purity OFHC copper and silver alloys designed for heavy duty
-                  switchgears.
+                  Electrical Contact Rivets and Assemblies Manufactured with OFHC Copper
+                  and Cadmium free Silver alloy wires
                 </p>
               </div>
             </div>
@@ -399,7 +362,7 @@ export default function Home() {
             >
               {/* Framed Image Container */}
               <div className="p-4">
-                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white flex items-center justify-center border border-slate-800/40 p-3">
+                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white flex items-center justify-center">
                   {cat.img && (
                     <img
                       src={cat.img}

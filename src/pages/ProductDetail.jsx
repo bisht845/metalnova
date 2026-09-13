@@ -173,11 +173,11 @@ export default function ProductDetail() {
 
             {/* Product Image Frame */}
             {product.imageUrl && (
-              <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden bg-slate-950 border border-slate-200/80 shadow-lg">
+              <div className="relative w-full rounded-3xl overflow-hidden bg-slate-950 border border-slate-200/80 shadow-lg">
                 <img
                   src={product.imageUrl}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto max-h-[520px] object-contain mx-auto"
                 />
               </div>
             )}

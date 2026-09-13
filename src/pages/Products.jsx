@@ -123,7 +123,7 @@ export default function Products() {
                   >
                     {/* Framed Image Container */}
                     <div className="p-4">
-                      <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white flex items-center justify-center border border-slate-100/50 p-3">
+                      <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white flex items-center justify-center">
                         {(cat.imageUrl || cat.img) && (
                           <img
                             src={cat.imageUrl || cat.img}
