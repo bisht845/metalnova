@@ -170,14 +170,14 @@ export default function Contact() {
                 <br />
                 Karnal-132001, Haryana
               </p>
-              <div className="pt-4 border-t border-slate-800/40 mt-4">
+              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
                   Designation
                 </p>
                 <p className="text-[16px] font-bold text-brand-copper mt-1">
                   Primary Manufacturing Plant & HQ
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* Delhi Office */}
@@ -193,14 +193,14 @@ export default function Contact() {
                 <br />
                 New Delhi-110027
               </p>
-              <div className="pt-4 border-t border-slate-800/40 mt-4">
+              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
                   Designation
                 </p>
                 <p className="text-[16px] font-bold text-brand-copper mt-1">
                   Sales Office
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* France Contact */}
@@ -228,14 +228,14 @@ export default function Contact() {
                 Technical partnership interface for EU switchgear manufacturers
                 and automotive design consortia.
               </p>
-              <div className="pt-4 border-t border-slate-800/40 mt-4">
+              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
                   Designation
                 </p>
                 <p className="text-[16px] font-bold text-brand-copper mt-1">
                   International Partner Office
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
