@@ -1,0 +1,1680 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --site-sidebar: #ffffff;
+  --site-navigation-text: #5c3321;
+  --site-navigation-hover: #8c4b2b;
+  --site-header-active: #c87d55;
+  --site-header-cta: #c87d55;
+  --site-header-cta-hover: #8c4b2b;
+  --site-header-cta-text: #ffffff;
+  --site-header-border: #d6b5a5;
+  --site-header-dropdown: #ffffff;
+  --site-header-icon: #c87d55;
+  --site-header-font: 'Outfit', sans-serif;
+  --site-header-weight: 600;
+  --site-header-size: 16px;
+  --site-heading: #c87d55;
+  --site-subheading: #8c4b2b;
+  --site-text: #5c3321;
+  --site-muted-text: #64748b;
+  --site-link: #c87d55;
+  --site-icon: #c87d55;
+  --site-accent: #c87d55;
+  --site-button: #c87d55;
+  --site-button-text: #ffffff;
+  --site-button-hover: #8c4b2b;
+  --site-border: #d6b5a5;
+  --site-focus: #c87d55;
+  --site-badge: #f7e9e2;
+  --site-badge-text: #8c4b2b;
+  --site-background: #ffffff;
+  --site-hero: #ffffff;
+  --site-surface: #f2f2f0;
+  --site-card: #ffffff;
+  --site-input: #ffffff;
+  --site-input-text: #5c3321;
+  --site-table-header: #f2f2f0;
+  --site-footer: #ffffff;
+  --site-footer-text: #5c3321;
+  --site-footer-heading: #c87d55;
+  --site-overlay: #5c3321;
+  --site-success: #059669;
+  --site-warning: #d97706;
+  --site-error: #e11d48;
+  --site-loader: #fefefd;
+  --site-loader-accent: #c87d55;
+  --site-loader-panel: #ffffff;
+  --site-loader-text: #8c4b2b;
+  --site-loader-ring: #c87d55;
+  --site-loader-track: #f1f5f9;
+  --site-loader-progress: #c87d55;
+  --site-loader-pattern: #c87d55;
+}
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+
+  /* Brand Metallic & Electric Colors */
+  --color-brand-silver-light: #f8fafc;
+  --color-brand-silver: #cbd5e1;
+  --color-brand-silver-dark: #64748b;
+
+  --color-brand-copper-light: #f3c2a9;
+  --color-brand-copper: var(--site-accent);
+  --color-brand-copper-dark: #8c4b2b;
+
+  --color-brand-electric: #00d2ff;
+  --color-brand-electric-dark: #0066ff;
+
+
+  --color-brand-bg-dark: #080c14;
+  --color-brand-card-dark: #111827;
+  --color-brand-card-border: #1f2937;
+
+  /* Additional Premium Dark Shades */
+  --color-brand-gray-900: #0f172a;
+  --color-brand-gray-800: #1e293b;
+
+  --animate-glow-pulse: glow-pulse 3s infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 210, 255, 0.2), 0 0 10px rgba(0, 210, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.5), 0 0 25px rgba(0, 210, 255, 0.3);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.animate-gradient-flow {
+  background-size: 200% 200%;
+  animation: gradient-flow 6s ease infinite;
+}
+
+/* Premium Web Presets */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
+  background-color: #ffffff;
+  color: #5c3321;
+}
+
+body,
+#root {
+  background: #ffffff;
+  color: #5c3321;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  background: rgba(17, 24, 39, 0.85);
+  border-color: rgba(0, 210, 255, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(0, 210, 255, 0.15);
+}
+
+.glass-card-copper-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-copper-hover:hover {
+  transform: translateY(-4px);
+  background: rgba(17, 24, 39, 0.85);
+  border-color: rgba(200, 125, 85, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(200, 125, 85, 0.15);
+}
+
+/* Gradients text */
+.text-gradient-silver {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-copper {
+  background: linear-gradient(135deg, #f3c2a9 0%, #c87d55 50%, #8c4b2b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-electric {
+  /* background: linear-gradient(135deg, #00d2ff 0%, #0082ff 100%); */
+  background: linear-gradient(135deg, #f3c2a9 0%, #c87d55 50%, #8c4b2b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow Borders */
+.glow-border-electric {
+  position: relative;
+}
+
+.glow-border-electric::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to right, #cbd5e1, #94A3B8);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.glow-border-copper {
+  position: relative;
+}
+
+.glow-border-copper::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to right, rgba(243, 194, 169, 0.5), rgba(200, 125, 85, 0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefefd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c87d55;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8c4b2b;
+}
+
+/* ================= ABOUT PAGE LIGHT THEME APPLIED SITE-WIDE ================= */
+#main-navbar {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid rgba(200, 125, 85, 0.24) !important;
+  color: #5c3321 !important;
+  backdrop-filter: blur(16px);
+}
+
+#main-navbar button,
+#main-navbar a {
+  color: #5c3321 !important;
+}
+
+#main-navbar button:hover,
+#main-navbar a:hover,
+#main-navbar [class*="text-brand-copper"] {
+  color: #8c4b2b !important;
+}
+
+#main-navbar #cta-quote-nav,
+#main-navbar #cta-quote-mobile {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #c87d55, #8c4b2b) !important;
+  border-color: rgba(200, 125, 85, 0.35) !important;
+}
+
+#language-selector>button,
+#language-selector [class*="bg-brand-bg-dark"],
+#language-selector [class*="bg-brand-card-dark"] {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(200, 125, 85, 0.28) !important;
+  color: #5c3321 !important;
+}
+
+#mobile-drawer {
+  background: #fefefd !important;
+  border-color: rgba(200, 125, 85, 0.24) !important;
+}
+
+#mobile-drawer-overlay {
+  background: rgba(92, 51, 33, 0.28) !important;
+}
+
+#home-page,
+#products-page,
+#product-detail-page,
+#certifications-page,
+#contact-page {
+  background: #ffffff !important;
+  color: #5c3321 !important;
+}
+
+#home-page section,
+#products-page section,
+#product-detail-page section,
+#certifications-page section,
+#contact-page section,
+.theme-about-surface {
+  background: #ffffff !important;
+  color: #5c3321 !important;
+  border-color: rgba(200, 125, 85, 0.22) !important;
+}
+
+#home-page section:nth-of-type(even),
+#products-page section:nth-of-type(even),
+#product-detail-page section:nth-of-type(even),
+#certifications-page section:nth-of-type(even),
+#contact-page section:nth-of-type(even) {
+  background: #f2f2f0 !important;
+}
+
+#home-page section>[class*="absolute inset-0"],
+#products-page section>[class*="absolute inset-0"],
+#product-detail-page section>[class*="absolute inset-0"],
+#certifications-page section>[class*="absolute inset-0"],
+#contact-page section>[class*="absolute inset-0"] {
+  opacity: 1;
+}
+
+#home-page [class*="bg-[#060a12]"],
+#home-page [class*="bg-[#030712]"],
+#home-page [class*="bg-[#040810]"],
+#home-page [class*="bg-[#080c14]"],
+#home-page [class*="bg-[#0f172a]"],
+#home-page [class*="bg-[#111827]"],
+#home-page [class*="bg-slate-900"],
+#home-page [class*="bg-slate-950"],
+#products-page [class*="bg-[#060a12]"],
+#products-page [class*="bg-[#030712]"],
+#products-page [class*="bg-[#040810]"],
+#products-page [class*="bg-[#080c14]"],
+#products-page [class*="bg-[#0f172a]"],
+#products-page [class*="bg-[#111827]"],
+#products-page [class*="bg-slate-900"],
+#products-page [class*="bg-slate-950"],
+#product-detail-page [class*="bg-[#060a12]"],
+#product-detail-page [class*="bg-[#030712]"],
+#product-detail-page [class*="bg-[#040810]"],
+#product-detail-page [class*="bg-[#080c14]"],
+#product-detail-page [class*="bg-[#0f172a]"],
+#product-detail-page [class*="bg-[#111827]"],
+#product-detail-page [class*="bg-slate-900"],
+#product-detail-page [class*="bg-slate-950"],
+#certifications-page [class*="bg-[#060a12]"],
+#certifications-page [class*="bg-[#030712]"],
+#certifications-page [class*="bg-[#040810]"],
+#certifications-page [class*="bg-[#080c14]"],
+#certifications-page [class*="bg-[#0f172a]"],
+#certifications-page [class*="bg-[#111827]"],
+#certifications-page [class*="bg-slate-900"],
+#certifications-page [class*="bg-slate-950"],
+#contact-page [class*="bg-[#060a12]"],
+#contact-page [class*="bg-[#030712]"],
+#contact-page [class*="bg-[#040810]"],
+#contact-page [class*="bg-[#080c14]"],
+#contact-page [class*="bg-[#0f172a]"],
+#contact-page [class*="bg-[#111827]"],
+#contact-page [class*="bg-slate-900"],
+#contact-page [class*="bg-slate-950"] {
+  background: rgba(254, 254, 253, 0.92) !important;
+}
+
+#home-page [class*="border-slate"],
+#products-page [class*="border-slate"],
+#product-detail-page [class*="border-slate"],
+#certifications-page [class*="border-slate"],
+#contact-page [class*="border-slate"],
+#footer-section [class*="border-brand-card-border"] {
+  border-color: rgba(200, 125, 85, 0.24) !important;
+}
+
+#home-page h1,
+#home-page h2,
+#home-page h3,
+#home-page h4,
+#home-page h5,
+#products-page h1,
+#products-page h2,
+#products-page h3,
+/* #products-page h4, */
+#products-page h5,
+#product-detail-page h1,
+#product-detail-page h2,
+#product-detail-page h3,
+#product-detail-page h4,
+#product-detail-page h5,
+#certifications-page h1,
+#certifications-page h2,
+#certifications-page h3,
+#certifications-page h4,
+#certifications-page h5,
+#contact-page h1,
+#contact-page h2,
+#contact-page h3,
+#contact-page h4,
+#contact-page h5 {
+  color: #c87d55 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+}
+
+#home-page p,
+#home-page li,
+#home-page td,
+#home-page label,
+#home-page span,
+/* #products-page p, */
+#products-page li,
+#products-page td,
+#products-page label,
+#products-page span,
+#product-detail-page p,
+#product-detail-page li,
+#product-detail-page td,
+#product-detail-page label,
+#product-detail-page span,
+#certifications-page p,
+#certifications-page li,
+#certifications-page td,
+#certifications-page label,
+#certifications-page span,
+#contact-page p,
+#contact-page li,
+#contact-page td,
+#contact-page label,
+#contact-page span {
+  color: #5c3321;
+}
+
+#home-page p,
+/* #products-page p, */
+#product-detail-page p,
+#certifications-page p,
+#contact-page p,
+#footer-section p {
+  color: #5c3321 !important;
+  font-weight: 300 !important;
+  line-height: 1.75;
+}
+
+#home-page li,
+#products-page li,
+#product-detail-page li,
+#certifications-page li,
+#contact-page li {
+  color: #5c3321 !important;
+  font-weight: 600 !important;
+}
+
+#home-page label,
+#products-page label,
+#product-detail-page label,
+#certifications-page label,
+#contact-page label {
+  color: #8c4b2b !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+#home-page [class*="uppercase"],
+/* #products-page [class*="uppercase"], */
+#product-detail-page [class*="uppercase"],
+#certifications-page [class*="uppercase"],
+#contact-page [class*="uppercase"],
+#footer-section [class*="uppercase"] {
+  color: #8c4b2b !important;
+  font-weight: 700 !important;
+}
+
+#home-page strong,
+#home-page b,
+#products-page strong,
+#products-page b,
+#product-detail-page strong,
+#product-detail-page b,
+#certifications-page strong,
+#certifications-page b,
+#contact-page strong,
+#contact-page b,
+#footer-section strong,
+#footer-section b {
+  color: #8c4b2b !important;
+  font-weight: 700 !important;
+}
+
+#home-page button,
+#home-page a,
+#products-page button,
+#products-page a,
+#product-detail-page button,
+#product-detail-page a,
+#certifications-page button,
+#certifications-page a,
+#contact-page button,
+#contact-page a,
+#footer-section button,
+#footer-section a {
+  font-weight: 700;
+}
+
+#home-page [class*="text-slate"],
+#home-page [class*="text-white"],
+#products-page [class*="text-slate"],
+#products-page [class*="text-white"],
+#product-detail-page [class*="text-slate"],
+#product-detail-page [class*="text-white"],
+#certifications-page [class*="text-slate"],
+#certifications-page [class*="text-white"],
+#contact-page [class*="text-slate"],
+#contact-page [class*="text-white"] {
+  color: #5c3321 !important;
+}
+
+#home-page [class*="text-brand-electric"],
+#products-page [class*="text-brand-electric"],
+#product-detail-page [class*="text-brand-electric"],
+#certifications-page [class*="text-brand-electric"],
+#contact-page [class*="text-brand-electric"],
+#home-page [class*="text-[#00D2FF]"],
+#products-page [class*="text-[#00D2FF]"],
+#product-detail-page [class*="text-[#00D2FF]"],
+#certifications-page [class*="text-[#00D2FF]"],
+#contact-page [class*="text-[#00D2FF]"] {
+  color: #8c4b2b !important;
+}
+
+#home-page [class*="text-brand-copper"],
+#products-page [class*="text-brand-copper"],
+#product-detail-page [class*="text-brand-copper"],
+#certifications-page [class*="text-brand-copper"],
+#contact-page [class*="text-brand-copper"] {
+  color: #c87d55 !important;
+}
+
+#home-page input,
+#home-page select,
+#home-page textarea,
+#products-page input,
+#products-page select,
+#products-page textarea,
+#product-detail-page input,
+#product-detail-page select,
+#product-detail-page textarea,
+#certifications-page input,
+#certifications-page select,
+#certifications-page textarea,
+#contact-page input,
+#contact-page select,
+#contact-page textarea {
+  background: #ffffff !important;
+  border-color: rgba(200, 125, 85, 0.32) !important;
+  color: #5c3321 !important;
+}
+
+#home-page input:focus,
+#home-page select:focus,
+#home-page textarea:focus,
+#products-page input:focus,
+#products-page select:focus,
+#products-page textarea:focus,
+#product-detail-page input:focus,
+#product-detail-page select:focus,
+#product-detail-page textarea:focus,
+#certifications-page input:focus,
+#certifications-page select:focus,
+#certifications-page textarea:focus,
+#contact-page input:focus,
+#contact-page select:focus,
+#contact-page textarea:focus {
+  border-color: #c87d55 !important;
+  box-shadow: 0 0 0 3px rgba(200, 125, 85, 0.12);
+}
+
+#home-page button,
+#home-page a,
+#products-page button,
+#products-page a,
+#product-detail-page button,
+#product-detail-page a,
+#certifications-page button,
+#certifications-page a,
+#contact-page button,
+#contact-page a {
+  border-color: rgba(200, 125, 85, 0.32);
+}
+
+#home-page button[class*="bg-gradient"],
+#home-page a[class*="bg-gradient"],
+#products-page button[class*="bg-gradient"],
+#products-page a[class*="bg-gradient"],
+#product-detail-page button[class*="bg-gradient"],
+#product-detail-page a[class*="bg-gradient"],
+#certifications-page button[class*="bg-gradient"],
+#certifications-page a[class*="bg-gradient"],
+#contact-page button[class*="bg-gradient"],
+#contact-page a[class*="bg-gradient"],
+#home-page button[type="submit"],
+#contact-page button[type="submit"],
+#product-detail-page button[type="submit"] {
+  background: linear-gradient(135deg, #c87d55, #8c4b2b) !important;
+  color: #ffffff !important;
+}
+
+#home-page button[class*="bg-gradient"] span,
+#home-page a[class*="bg-gradient"] span,
+#products-page button[class*="bg-gradient"] span,
+#products-page a[class*="bg-gradient"] span,
+#product-detail-page button[class*="bg-gradient"] span,
+#product-detail-page a[class*="bg-gradient"] span,
+#certifications-page button[class*="bg-gradient"] span,
+#certifications-page a[class*="bg-gradient"] span,
+#contact-page button[class*="bg-gradient"] span,
+#contact-page a[class*="bg-gradient"] span,
+#home-page button[type="submit"] span,
+#contact-page button[type="submit"] span,
+#product-detail-page button[type="submit"] span {
+  color: #ffffff !important;
+}
+
+#home-page table,
+#products-page table,
+#product-detail-page table,
+#certifications-page table,
+#contact-page table {
+  background: #ffffff !important;
+  color: #5c3321 !important;
+}
+
+#home-page thead tr,
+#products-page thead tr,
+#product-detail-page thead tr,
+#certifications-page thead tr,
+#contact-page thead tr {
+  background: #f2f2f0 !important;
+}
+
+#cert-modal-overlay {
+  background: rgba(92, 51, 33, 0.58) !important;
+}
+
+#cert-modal-body {
+  background: #ffffff !important;
+  border-color: rgba(200, 125, 85, 0.28) !important;
+  color: #5c3321 !important;
+}
+
+#cert-modal-body h3,
+#cert-modal-body p,
+#cert-modal-body span {
+  color: #5c3321 !important;
+}
+
+#footer-section {
+  background: #ffffff !important;
+  color: #5c3321 !important;
+  border-top: 1px solid rgba(200, 125, 85, 0.24);
+}
+
+#footer-section h3,
+#footer-section p,
+#footer-section a,
+#footer-section button,
+#footer-section span {
+  color: #5c3321 !important;
+}
+
+#footer-section a:hover,
+#footer-section button:hover {
+  color: #c87d55 !important;
+}
+
+#footer-section [class*="bg-brand-copper"] {
+  background: rgba(200, 125, 85, 0.12) !important;
+  color: #8c4b2b !important;
+  border: 1px solid rgba(200, 125, 85, 0.24);
+}
+
+/* ================= GOOGLE TRANSLATE PREMIUM CUSTOMIZATION ================= */
+/* Hide the Google Translate top bar frame */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+#goog-gt-tt {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Prevent Google Translate from shifting the body down */
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+/* Hide hover text highlight coloring by Google Translate */
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Hide translate tooltips */
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* ================= CUSTOM COLOR SCHEME FOR HOME PAGE ================= */
+#home-page-custom,
+#home-page-custom section,
+#home-page-custom [class*="bg-[#"],
+#home-page-custom [class*="bg-slate"],
+#home-page-custom [class*="bg-gray"],
+#home-page-custom [class*="bg-brand"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: rgba(98, 102, 106, 0.2) !important;
+}
+
+/* Make background overlays subtle on white background */
+#home-page-custom section > [class*="absolute inset-0"] {
+  opacity: 0.05 !important;
+}
+
+#home-page-custom h1,
+#home-page-custom h2,
+#home-page-custom h3,
+#home-page-custom h4,
+#home-page-custom h5,
+#home-page-custom h6 {
+  color: #023C85 !important;
+}
+
+#home-page-custom p,
+#home-page-custom li,
+#home-page-custom td,
+#home-page-custom label,
+#home-page-custom span,
+#home-page-custom strong,
+#home-page-custom b,
+#home-page-custom a {
+  color: #03045A !important;
+}
+
+/* Specific overrides for inputs, selects, and textareas */
+#home-page-custom input,
+#home-page-custom select,
+#home-page-custom textarea {
+  background: #ffffff !important;
+  color: #03045A !important;
+  border-color: rgba(98, 102, 106, 0.3) !important;
+}
+#home-page-custom input:focus,
+#home-page-custom select:focus,
+#home-page-custom textarea:focus {
+  border-color: #023C85 !important;
+  box-shadow: 0 0 0 3px rgba(31, 210, 230, 0.12) !important;
+}
+
+/* Buttons and Links */
+#home-page-custom button,
+#home-page-custom a[class*="px-"],
+#home-page-custom a[class*="p-3"],
+#home-page-custom button[class*="bg-gradient"],
+#home-page-custom a[class*="bg-gradient"],
+#home-page-custom button[type="submit"] {
+  background: #023C85 !important;
+  background-color: #023C85 !important;
+  color: white !important;
+  border-color: #023C85 !important;
+  box-shadow: none !important;
+}
+
+#home-page-custom button span,
+#home-page-custom a[class*="px-"] span,
+#home-page-custom a[class*="p-3"] span,
+#home-page-custom button[class*="bg-gradient"] span,
+#home-page-custom a[class*="bg-gradient"] span,
+#home-page-custom button[type="submit"] span {
+  /* color: #03045A !important; */
+  color: white !important;
+}
+
+#home-page-custom button:hover,
+#home-page-custom a[class*="px-"]:hover,
+#home-page-custom a[class*="p-3"]:hover,
+#home-page-custom button[class*="bg-gradient"]:hover,
+#home-page-custom a[class*="bg-gradient"]:hover,
+#home-page-custom button[type="submit"]:hover {
+  background: #023C85 !important;
+  background-color: #023C85 !important;
+  color: white !important;
+  border-color: #023C85 !important;
+}
+
+/* ================= CUSTOM COLOR SCHEME FOR PRODUCTS PAGE ================= */
+#products-page-custom,
+#products-page-custom section,
+#products-page-custom [class*="bg-[#"],
+#products-page-custom [class*="bg-slate"],
+#products-page-custom [class*="bg-gray"],
+#products-page-custom [class*="bg-brand"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: rgba(1, 114, 176, 0.15) !important;
+}
+
+/* Make background overlays subtle on white background */
+#products-page-custom section > [class*="absolute inset-0"] {
+  opacity: 0.05 !important;
+}
+
+#products-page-custom h1,
+#products-page-custom h2,
+#products-page-custom h3 {
+  color: #023C85 !important;
+}
+
+#products-page-custom h4,
+#products-page-custom h5,
+#products-page-custom h6 {
+  color: #023C85 !important;
+}
+
+#products-page-custom p,
+#products-page-custom span,
+#products-page-custom li {
+  color: #334155 !important; /* Neutral dark slate for excellent readability */
+}
+
+/* Specific button styling */
+#products-page-custom button,
+#products-page-custom a {
+  font-family: 'Outfit', sans-serif !important;
+}
+
+/* Input search bar overrides */
+#products-page-custom input {
+  background: #ffffff !important;
+  color: #023C85 !important;
+  border: 1.5px solid rgba(1, 114, 176, 0.2) !important;
+  border-radius: 1rem !important;
+}
+
+#products-page-custom input:focus {
+  border-color: #0172B0 !important;
+  box-shadow: 0 0 0 4px rgba(1, 114, 176, 0.1) !important;
+}
+
+/* Tabs and pills */
+#products-page-custom .tab-active {
+  background: linear-gradient(135deg, #023C85 0%, #0172B0 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(2, 60, 133, 0.25) !important;
+}
+
+#products-page-custom .tab-inactive {
+  background: #ffffff !important;
+  color: #023C85 !important;
+  border: 1px solid rgba(2, 60, 133, 0.15) !important;
+}
+
+#products-page-custom .tab-inactive:hover {
+  background: #0172B0 !important;
+  color: #ffffff !important;
+  border-color: #0172B0 !important;
+}
+
+/* Product cards overrides */
+#products-page-custom .product-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(1, 114, 176, 0.12) !important;
+  box-shadow: 0 4px 20px rgba(2, 60, 133, 0.03) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+#products-page-custom .product-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: rgba(1, 114, 176, 0.3) !important;
+  box-shadow: 0 20px 40px rgba(1, 114, 176, 0.1) !important;
+}
+
+#products-page-custom .product-index-badge {
+  background: linear-gradient(135deg, #023C85 0%, #0172B0 100%) !important;
+  color: #ffffff !important;
+}
+
+#products-page-custom .material-tag {
+  background: rgba(1, 114, 176, 0.05) !important;
+  color: #0172B0 !important;
+  border: 1px solid rgba(1, 114, 176, 0.1) !important;
+}
+
+#products-page-custom .specs-link {
+  color: #0172B0 !important;
+}
+
+#products-page-custom .product-card:hover .specs-link {
+  color: #023C85 !important;
+}
+
+/* Admin-managed public website theme */
+html #certifications-page .cert-theme-accent {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+}
+
+html #certifications-page .cert-theme-accent-border {
+  border-color: var(--site-border) !important;
+}
+
+html #certifications-page .cert-theme-accent-bg {
+  background: var(--site-heading) !important;
+  background-color: var(--site-heading) !important;
+}
+
+html body,
+html #root,
+html #public-site-shell,
+html #public-site-shell > main {
+  background: var(--site-background);
+  color: var(--site-text);
+}
+
+html :is(#main-navbar, #main-navbar-custom, #mobile-drawer, #mobile-drawer-custom) {
+  background: var(--site-sidebar) !important;
+  border-color: var(--site-header-border) !important;
+  font-family: var(--site-header-font) !important;
+}
+
+html :is(#main-navbar, #main-navbar-custom, #mobile-drawer, #mobile-drawer-custom) :is(a, button, span) {
+  color: var(--site-navigation-text) !important;
+  font-family: var(--site-header-font) !important;
+  font-weight: var(--site-header-weight) !important;
+}
+
+html :is(#main-navbar, #main-navbar-custom, #mobile-drawer, #mobile-drawer-custom) :is(a, button):hover { color: var(--site-navigation-hover) !important; }
+
+html :is(#main-navbar-custom, #mobile-drawer-custom) :is(#cta-quote-nav, #cta-quote-mobile):hover {
+  background: var(--site-header-cta-hover) !important;
+  background-color: var(--site-header-cta-hover) !important;
+  border-color: var(--site-header-cta-hover) !important;
+}
+
+html :is(#main-navbar-custom, #mobile-drawer-custom) [data-active="true"] { color: var(--site-header-active) !important; }
+html :is(#main-navbar-custom, #mobile-drawer-custom) [data-active="true"] span { background: var(--site-header-active) !important; }
+html :is(#main-navbar-custom, #mobile-drawer-custom) svg { color: var(--site-header-icon) !important; }
+html #language-selector > div { background: var(--site-header-dropdown) !important; border-color: var(--site-header-border) !important; }
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page),
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) section,
+html #footer-section-custom {
+  background: var(--site-background) !important;
+  background-color: var(--site-background) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) section:nth-of-type(even) {
+  background: var(--site-surface) !important;
+  background-color: var(--site-surface) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) section:first-of-type {
+  background: var(--site-hero) !important;
+  background-color: var(--site-hero) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) section:nth-of-type(even) > [class*="absolute"][class*="inset-0"] {
+  background-color: var(--site-surface) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) div[class*="bg-gray"] {
+  background: var(--site-surface) !important;
+  background-color: var(--site-surface) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(.product-card, .glass-card, section div[class*="rounded-2xl"][class*="border-"], section div[class*="rounded-3xl"][class*="border-"]),
+html #cert-modal-body {
+  background: var(--site-card) !important;
+  background-color: var(--site-card) !important;
+}
+
+html #footer-section-custom {
+  background: var(--site-footer) !important;
+  background-color: var(--site-footer) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="border-"] {
+  border-color: var(--site-border) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page, #footer-section-custom) :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page, #footer-section-custom) :is(p, li, td, th, dt, dd, label, span, strong, small) {
+  color: var(--site-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(label, [class*="uppercase"]) {
+  color: var(--site-subheading) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(p, span)[class*="text-slate"],
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(p, span)[class*="text-gray"] {
+  color: var(--site-muted-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page, #footer-section-custom) :is(h1, h2, h3, h4, h5, h6) span {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page, #footer-section-custom) a {
+  color: var(--site-link) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page, #footer-section-custom) :is(svg, [class*="icon"]) {
+  color: var(--site-icon) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(input, select, textarea) {
+  color: var(--site-input-text) !important;
+  background: var(--site-input) !important;
+  background-color: var(--site-input) !important;
+  border-color: var(--site-border) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(input, select, textarea):focus {
+  border-color: var(--site-focus) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--site-focus), transparent 80%) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(button[type="submit"], a[class*="bg-gradient"], button[class*="bg-gradient"], a[class*="px-"], a[class*="p-3"], .tab-active, .product-index-badge),
+html :is(#main-navbar, #main-navbar-custom, #mobile-drawer, #mobile-drawer-custom) :is(#cta-quote-nav, #cta-quote-mobile) {
+  background: var(--site-header-cta) !important;
+  background-color: var(--site-header-cta) !important;
+  border-color: var(--site-header-cta) !important;
+  color: var(--site-header-cta-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) button {
+  border-color: var(--site-button) !important;
+  color: var(--site-button) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) button[class*="bg-"] {
+  background: var(--site-button) !important;
+  background-color: var(--site-button) !important;
+  color: var(--site-button-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(button, a[class*="px-"], a[class*="p-3"]):hover {
+  background: var(--site-button-hover) !important;
+  background-color: var(--site-button-hover) !important;
+  border-color: var(--site-button-hover) !important;
+  color: var(--site-button-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(button, a[class*="px-"], a[class*="p-3"]):hover :is(span, strong, svg) {
+  color: var(--site-button-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(button[type="submit"], a[class*="bg-gradient"], button[class*="bg-gradient"], a[class*="px-"], a[class*="p-3"], .tab-active, .product-index-badge) span,
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) button[class*="bg-"] span,
+html :is(#main-navbar, #main-navbar-custom, #mobile-drawer, #mobile-drawer-custom) :is(#cta-quote-nav, #cta-quote-mobile) span {
+  color: var(--site-header-cta-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(.product-index-badge, .material-tag, [class*="rounded-full"][class*="uppercase"]) {
+  background: var(--site-badge) !important;
+  background-color: var(--site-badge) !important;
+  color: var(--site-badge-text) !important;
+}
+
+html #products-page-custom button.tab-active {
+  background: var(--site-button) !important;
+  background-color: var(--site-button) !important;
+  border-color: var(--site-button) !important;
+  color: var(--site-button-text) !important;
+}
+
+html #products-page-custom button.tab-inactive {
+  background: var(--site-badge) !important;
+  background-color: var(--site-badge) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-badge-text) !important;
+}
+
+html #products-page-custom button:is(.tab-active, .tab-inactive):hover {
+  background: var(--site-button-hover) !important;
+  background-color: var(--site-button-hover) !important;
+  border-color: var(--site-button-hover) !important;
+  color: var(--site-button-text) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) :is(thead, thead tr) {
+  background: var(--site-table-header) !important;
+  background-color: var(--site-table-header) !important;
+}
+
+html #footer-section-custom :is(p, li, td, label, span, strong, b, a, button) {
+  color: var(--site-footer-text) !important;
+}
+html #footer-section-custom :is(h1, h2, h3, h4, h5, h6),
+html #footer-section-custom :is(h1, h2, h3, h4, h5, h6) :is(span, strong, b) {
+  color: var(--site-footer-text) !important;
+  -webkit-text-fill-color: var(--site-footer-text) !important;
+}
+
+html :is(#mobile-drawer-overlay, #cert-modal-overlay) {
+  background: color-mix(in srgb, var(--site-overlay), transparent 35%) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="bg-gradient-to-t"][class*="absolute"] {
+  background-image: linear-gradient(to top, color-mix(in srgb, var(--site-overlay), transparent 18%), transparent) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="bg-clip-text"] {
+  background-image: linear-gradient(135deg, var(--site-heading), var(--site-accent)) !important;
+}
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-emerald"],
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-green"] { color: var(--site-success) !important; }
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-amber"],
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-yellow"] { color: var(--site-warning) !important; }
+
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-rose"],
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-red"] { color: var(--site-error) !important; }
+
+html #site-loader { background: var(--site-loader) !important; color: var(--site-loader-text) !important; }
+html #loader-grid {
+  background-image: linear-gradient(to right, color-mix(in srgb, var(--site-loader-pattern), transparent 92%) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in srgb, var(--site-loader-pattern), transparent 92%) 1px, transparent 1px) !important;
+}
+html #loader-glow { background: radial-gradient(circle at center, color-mix(in srgb, var(--site-loader-accent), transparent 78%), transparent 55%) !important; }
+html #loader-panel {
+  background: var(--site-loader-panel) !important;
+  border-color: color-mix(in srgb, var(--site-loader-ring), transparent 55%) !important;
+  box-shadow: 0 0 24px color-mix(in srgb, var(--site-loader-accent), transparent 72%) !important;
+}
+html #site-loader :is(span, p, h1, h2, h3) {
+  color: var(--site-loader-text) !important;
+  -webkit-text-fill-color: var(--site-loader-text) !important;
+}
+html #loader-outer-ring { border-top-color: var(--site-loader-ring) !important; border-bottom-color: color-mix(in srgb, var(--site-loader-ring), transparent 70%) !important; }
+html #loader-inner-ring { border-left-color: var(--site-loader-ring) !important; border-right-color: color-mix(in srgb, var(--site-loader-ring), transparent 70%) !important; }
+html #loader-progress-track { background: var(--site-loader-track) !important; }
+html #loader-progress-fill { background: var(--site-loader-progress) !important; }
+
+html ::selection {
+  background: var(--site-accent);
+  color: var(--site-button-text);
+}
+
+html #footer-section-custom :is(a:hover, button:hover),
+html :is(#home-page-custom, #about-page, #products-page-custom, #product-detail-page, #certifications-page, #contact-page) [class*="text-brand-electric"] {
+  color: var(--site-accent) !important;
+}
+
+/* Admin-themed quality standards section */
+html #certifications-page .quality-standards-heading,
+html #certifications-page .quality-standards-title {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+}
+
+html #certifications-page .quality-standards-card {
+  background: var(--site-card) !important;
+  background-color: var(--site-card) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-text) !important;
+}
+
+html #certifications-page .quality-standards-card:hover {
+  border-color: var(--site-accent) !important;
+}
+
+html #certifications-page .quality-standards-icon {
+  background: var(--site-badge) !important;
+  background-color: var(--site-badge) !important;
+  color: var(--site-icon) !important;
+}
+
+html #certifications-page .quality-standards-icon svg {
+  color: var(--site-icon) !important;
+}
+
+/* Admin-themed certificate cards and view buttons */
+html #certifications-page .certificate-card {
+  background: var(--site-card) !important;
+  background-color: var(--site-card) !important;
+  border-color: var(--site-border) !important;
+}
+
+html #certifications-page .certificate-card:focus-visible {
+  border-color: var(--site-focus) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--site-focus), transparent 70%) !important;
+}
+
+html #certifications-page .certificate-card-overlay {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html #certifications-page .certificate-card-action {
+  background: var(--site-button) !important;
+  background-color: var(--site-button) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-button-text) !important;
+}
+
+html #certifications-page .certificate-card:hover .certificate-card-action {
+  background: var(--site-button-hover) !important;
+  background-color: var(--site-button-hover) !important;
+  border-color: var(--site-button-hover) !important;
+  color: var(--site-button-text) !important;
+}
+
+html #certifications-page .certificate-card-action .certificate-card-action-text,
+html #certifications-page .certificate-card:hover .certificate-card-action .certificate-card-action-text {
+  color: var(--site-button-text) !important;
+  -webkit-text-fill-color: var(--site-button-text) !important;
+  opacity: 1 !important;
+}
+
+/*
+ * Final semantic theme mapping.
+ * These selectors intentionally outrank the legacy page styles so old
+ * brand-copper utility classes cannot restore the former #c87d55 color.
+ */
+html body #public-site-shell :is(
+  #home-page, #home-page-custom, #about-page, #products-page,
+  #products-page-custom, #product-detail-page, #certifications-page, #contact-page
+) :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+  font-weight: 400 !important;
+}
+
+html body #public-site-shell :is(
+  #home-page, #home-page-custom, #about-page, #products-page,
+  #products-page-custom, #product-detail-page, #certifications-page, #contact-page
+) :is(p, li, td, th, dt, dd) {
+  color: var(--site-text) !important;
+}
+
+html body #public-site-shell :is(
+  #home-page, #home-page-custom, #about-page, #products-page,
+  #products-page-custom, #product-detail-page, #certifications-page, #contact-page
+) :is(p, li, td, th, dt, dd) :is(span, strong, small) {
+  color: var(--site-text) !important;
+  -webkit-text-fill-color: var(--site-text) !important;
+}
+
+html body #public-site-shell :is(
+  #home-page, #home-page-custom, #about-page, #products-page,
+  #products-page-custom, #product-detail-page, #certifications-page, #contact-page
+) :is(label, [class*="uppercase"]:not(button):not(a)) {
+  color: var(--site-subheading) !important;
+}
+
+html body #public-site-shell :is(
+  #home-page, #home-page-custom, #about-page, #products-page,
+  #products-page-custom, #product-detail-page, #certifications-page, #contact-page
+) a:not([class*="bg-"]):not([class*="p-"]):not([class*="px-"]) {
+  color: var(--site-link) !important;
+}
+
+html body #public-site-shell :is(
+  #home-page, #home-page-custom, #about-page, #products-page,
+  #products-page-custom, #product-detail-page, #certifications-page, #contact-page
+) :is(input, select, textarea) {
+  background-color: var(--site-input) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-input-text) !important;
+}
+
+html body #public-site-shell #products-page-custom button.tab-active {
+  background: var(--site-button) !important;
+  background-color: var(--site-button) !important;
+  border-color: var(--site-button) !important;
+  color: var(--site-button-text) !important;
+}
+
+html body #public-site-shell #products-page-custom button.tab-inactive {
+  background: var(--site-card) !important;
+  background-color: var(--site-card) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-heading) !important;
+}
+
+html body #public-site-shell #products-page-custom button:is(.tab-active, .tab-inactive):hover {
+  background: var(--site-button-hover) !important;
+  background-color: var(--site-button-hover) !important;
+  border-color: var(--site-button-hover) !important;
+  color: var(--site-button-text) !important;
+}
+
+/* Admin uses the same published website theme without changing preview colors. */
+html :is(#admin-login-page, #admin-page) {
+  background: var(--site-background) !important;
+  background-color: var(--site-background) !important;
+  color: var(--site-text) !important;
+}
+
+html :is(#admin-login-page, #admin-page) :is(
+  [class*="bg-[#111827]"], [class*="bg-[#0f172a]"],
+  [class*="bg-[#0a0f18]"], [class*="bg-[#070b12]"]
+):not(.admin-theme-preview):not(.admin-theme-preview *) {
+  background: var(--site-card) !important;
+  background-color: var(--site-card) !important;
+}
+
+html :is(#admin-login-page, #admin-page) :is(h1, h2, h3, h4, h5, h6):not(.admin-theme-preview *) {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+}
+
+html :is(#admin-login-page, #admin-page) :is(p, li, td, th, span, strong):not(.admin-theme-preview *) {
+  color: var(--site-text) !important;
+}
+
+html :is(#admin-login-page, #admin-page) :is(label, [class*="uppercase"]):not(button):not(.admin-theme-preview *) {
+  color: var(--site-subheading) !important;
+}
+
+html :is(#admin-login-page, #admin-page) [class*="text-slate-400"]:not(.admin-theme-preview *) {
+  color: var(--site-muted-text) !important;
+}
+
+html :is(#admin-login-page, #admin-page) [class*="border-"]:not(.admin-theme-preview):not(.admin-theme-preview *) {
+  border-color: var(--site-border) !important;
+}
+
+html :is(#admin-login-page, #admin-page) :is(input, select, textarea):not([type="color"]):not(.admin-theme-preview *) {
+  background: var(--site-input) !important;
+  background-color: var(--site-input) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-input-text) !important;
+}
+
+html :is(#admin-login-page, #admin-page) :is(input, select, textarea):focus:not(.admin-theme-preview *) {
+  border-color: var(--site-focus) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--site-focus), transparent 75%) !important;
+}
+
+html :is(#admin-login-page, #admin-page) button:not(.admin-theme-preview *) {
+  background: var(--site-button) !important;
+  background-color: var(--site-button) !important;
+  border-color: var(--site-button) !important;
+  color: var(--site-button-text) !important;
+}
+
+html :is(#admin-login-page, #admin-page) button:not(.admin-theme-preview *) :is(span, strong, svg) {
+  color: var(--site-button-text) !important;
+  -webkit-text-fill-color: var(--site-button-text) !important;
+  fill: currentColor;
+}
+
+html #admin-page button:hover:not(.admin-theme-preview *) {
+  background: var(--site-button-hover) !important;
+  background-color: var(--site-button-hover) !important;
+  border-color: var(--site-button-hover) !important;
+  color: var(--site-button-text) !important;
+}
+
+html #admin-page button:hover:not(.admin-theme-preview *) :is(span, strong, svg) {
+  color: var(--site-button-text) !important;
+  -webkit-text-fill-color: var(--site-button-text) !important;
+}
+
+html #admin-page button.admin-delete-product {
+  background: var(--site-error) !important;
+  background-color: var(--site-error) !important;
+  border-color: var(--site-error) !important;
+  color: var(--site-button-text) !important;
+}
+
+html #admin-page button.admin-logout-button {
+  background: color-mix(in srgb, var(--site-error), transparent 88%) !important;
+  background-color: color-mix(in srgb, var(--site-error), transparent 88%) !important;
+  border-color: var(--site-error) !important;
+  color: var(--site-error) !important;
+}
+
+html #admin-page button.admin-logout-button:hover {
+  background: var(--site-error) !important;
+  background-color: var(--site-error) !important;
+  border-color: var(--site-error) !important;
+  color: var(--site-button-text) !important;
+}
+
+html #admin-page .admin-spec-item {
+  background: var(--site-card) !important;
+  background-color: var(--site-card) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-text) !important;
+}
+
+html #admin-page .admin-spec-editor {
+  background: var(--site-surface) !important;
+  background-color: var(--site-surface) !important;
+  border-color: var(--site-border) !important;
+}
+
+html #admin-page .admin-spec-heading,
+html #admin-page .admin-spec-parameter {
+  color: var(--site-subheading) !important;
+  -webkit-text-fill-color: var(--site-subheading) !important;
+}
+
+html #admin-page .admin-spec-value {
+  color: var(--site-text) !important;
+  -webkit-text-fill-color: var(--site-text) !important;
+}
+
+html #admin-page button.admin-spec-remove {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  background: color-mix(in srgb, var(--site-error), transparent 88%) !important;
+  background-color: color-mix(in srgb, var(--site-error), transparent 88%) !important;
+  border-color: var(--site-error) !important;
+  color: var(--site-error) !important;
+}
+
+html #admin-page button.admin-spec-remove:hover {
+  background: var(--site-error) !important;
+  background-color: var(--site-error) !important;
+  border-color: var(--site-error) !important;
+  color: var(--site-button-text) !important;
+}
+
+/*
+ * Semantic colors are kept last so generic heading/body utility overrides
+ * cannot replace the status colors selected in the admin theme editor.
+ */
+html body [data-theme-status="success"],
+html body [data-theme-status="success"] :is(h1, h2, h3, h4, h5, h6, p, span, strong, small, svg) {
+  color: var(--site-success) !important;
+  -webkit-text-fill-color: var(--site-success) !important;
+}
+
+html body [data-theme-status="success"] {
+  background: color-mix(in srgb, var(--site-success), var(--site-card) 90%) !important;
+  border-color: var(--site-success) !important;
+}
+
+html body [data-theme-status="warning"],
+html body [data-theme-status="warning"] :is(h1, h2, h3, h4, h5, h6, p, span, strong, small, svg) {
+  color: var(--site-warning) !important;
+  -webkit-text-fill-color: var(--site-warning) !important;
+}
+
+html body [data-theme-status="warning"] {
+  background: color-mix(in srgb, var(--site-warning), var(--site-card) 90%) !important;
+  border-color: var(--site-warning) !important;
+}
+
+html body [data-theme-status="error"],
+html body [data-theme-status="error"] :is(h1, h2, h3, h4, h5, h6, p, span, strong, small, svg) {
+  color: var(--site-error) !important;
+  -webkit-text-fill-color: var(--site-error) !important;
+}
+
+html body [data-theme-status="error"] {
+  background: color-mix(in srgb, var(--site-error), var(--site-card) 90%) !important;
+  border-color: var(--site-error) !important;
+}
+
+html body #public-site-shell [class*="text-emerald"],
+html body #public-site-shell [class*="text-green"] {
+  color: var(--site-success) !important;
+  -webkit-text-fill-color: var(--site-success) !important;
+}
+
+html body #public-site-shell [class*="text-amber"],
+html body #public-site-shell [class*="text-yellow"] {
+  color: var(--site-warning) !important;
+  -webkit-text-fill-color: var(--site-warning) !important;
+}
+
+html body #public-site-shell [class*="text-rose"],
+html body #public-site-shell [class*="text-red"] {
+  color: var(--site-error) !important;
+  -webkit-text-fill-color: var(--site-error) !important;
+}
+
+/* Native sliders follow the admin-managed focus/accent colors. */
+html body input[type="range"] {
+  accent-color: var(--site-accent);
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--site-accent), var(--site-surface) 72%);
+}
+
+html body input[type="range"]::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  margin-top: -0.3rem;
+  border: 2px solid var(--site-card);
+  border-radius: 999px;
+  background: var(--site-accent);
+  box-shadow: 0 0 0 2px var(--site-focus);
+  -webkit-appearance: none;
+}
+
+html body input[type="range"]::-moz-range-track {
+  height: 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--site-accent), var(--site-surface) 72%);
+}
+
+html body input[type="range"]::-moz-range-progress,
+html body input[type="range"]::-moz-range-thumb {
+  background: var(--site-accent);
+}
+
+html body input[type="range"]::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--site-card);
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px var(--site-focus);
+}
+
+/* Product-detail hero: title and its supporting text use their exact admin fields. */
+html body #product-detail-page [data-theme-role="product-title"] {
+  color: var(--site-heading) !important;
+  -webkit-text-fill-color: var(--site-heading) !important;
+}
+
+html body #product-detail-page [data-theme-role="product-tagline"] {
+  color: var(--site-subheading) !important;
+  -webkit-text-fill-color: var(--site-subheading) !important;
+  background-image: none !important;
+}
+
+/* Admin-managed scrollbars, shared by vertical and horizontal overflow areas. */
+html {
+  scrollbar-color: var(--site-accent) var(--site-surface);
+  scrollbar-width: thin;
+}
+
+html body * {
+  scrollbar-color: var(--site-accent) var(--site-surface);
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar,
+html body *::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html::-webkit-scrollbar-track,
+html body *::-webkit-scrollbar-track {
+  background: var(--site-surface);
+  border: 1px solid var(--site-border);
+}
+
+html::-webkit-scrollbar-thumb,
+html body *::-webkit-scrollbar-thumb {
+  min-width: 28px;
+  min-height: 28px;
+  background: var(--site-accent);
+  border: 3px solid var(--site-surface);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+html body *::-webkit-scrollbar-thumb:hover {
+  background: var(--site-button-hover);
+}
+
+html::-webkit-scrollbar-corner,
+html body *::-webkit-scrollbar-corner {
+  background: var(--site-surface);
+}
+
+/*
+ * Admin-managed website typography.
+ * The persisted field names retain the "header" prefix for backward
+ * compatibility, but these values now control every public text element.
+ */
+html body #public-site-shell,
+html body #public-site-shell :is(
+  h1, h2, h3, h4, h5, h6,
+  p, li, dt, dd, td, th,
+  a, button, label, input, select, textarea,
+  span, strong, small
+) {
+  font-family: var(--site-header-font) !important;
+  font-weight: var(--site-header-weight) !important;
+}
+
+/* Show the same site-wide typography immediately in the admin preview. */
+html body .admin-theme-preview,
+html body .admin-theme-preview * {
+  font-family: var(--site-header-font) !important;
+  font-weight: var(--site-header-weight) !important;
+}
+
+/* Contact phone dial code follows the admin-managed form palette. */
+html body #contact-page .contact-phone-prefix {
+  background: var(--site-input) !important;
+  background-color: var(--site-input) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-input-text) !important;
+  -webkit-text-fill-color: var(--site-input-text) !important;
+}
+
+/* Product inquiry phone dial code uses the same admin form palette. */
+html body #product-detail-page .product-phone-prefix {
+  background: var(--site-input) !important;
+  background-color: var(--site-input) !important;
+  border-color: var(--site-border) !important;
+  color: var(--site-input-text) !important;
+  -webkit-text-fill-color: var(--site-input-text) !important;
+}
+
+/* Prevent timeline titles and step numbers colliding on narrow phones only. */
+@media (min-width: 320px) and (max-width: 375.98px) {
+  html body #home-page-custom .why-timeline-card {
+    padding: 1rem !important;
+  }
+
+  html body #home-page-custom .why-timeline-card-heading {
+    margin-top: 2.25rem;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  html body #home-page-custom .why-timeline-card-title {
+    font-size: 0.9375rem !important;
+    line-height: 1.3 !important;
+  }
+
+  html body #home-page-custom .why-timeline-step {
+    top: 0.65rem;
+    right: 1rem;
+    font-size: 1.125rem !important;
+    line-height: 1;
+  }
+}
+
+/* Remove the decorative wash over Why Choose content on mobile only. */
+@media (max-width: 425px) {
+  html body #home-page-custom #why-choose-us {
+    isolation: isolate;
+    background-image: none !important;
+    filter: none !important;
+  }
+
+  html body #home-page-custom #why-choose-us > .absolute,
+  html body #home-page-custom #why-choose-us::before,
+  html body #home-page-custom #why-choose-us::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  html body #home-page-custom #why-choose-us > .max-w-7xl {
+    position: relative;
+    z-index: 10;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+}
+

@@ -1,0 +1,39 @@
+const LOCAL_API = 'http://localhost:5000/api';
+const PRODUCTION_API = 'https://metal-nova-nine.vercel.app/api';
+const configuredApi = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '');
+const invalidProductionHosts = ['metal-nova-cyan.vercel.app', 'metal-nova-9fae.vercel.app'];
+const configuredApiIsInvalid = invalidProductionHosts.some((host) => configuredApi?.includes(host));
+
+export const API_BASE = import.meta.env.DEV
+  ? (configuredApi || LOCAL_API)
+  : (configuredApi && !configuredApiIsInvalid ? configuredApi : PRODUCTION_API);
+
+export const apiUrl = (path = '') => `${API_BASE}/${path.replace(/^\//, '')}`;
+
+export const apiFetch = (path, options) => fetch(apiUrl(path), options);
+
+export const readJsonResponse = async (response) => {
+  const contentType = response.headers.get('content-type') || '';
+  if (!contentType.includes('application/json')) {
+    if (response.status === 404) {
+      throw new Error('The requested backend API route is not deployed yet.');
+    }
+    throw new Error('The API returned a web page instead of JSON. Check VITE_API_BASE_URL.');
+  }
+
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.error || `API request failed with status ${response.status}.`);
+  }
+  return data;
+};
+
+export const readThemeResponse = readJsonResponse;
+
+export const apiRequest = async (path, options) => readJsonResponse(await apiFetch(path, options));
+
+export const jsonOptions = (method, body) => ({
+  method,
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(body)
+});
