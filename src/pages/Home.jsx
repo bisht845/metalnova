@@ -5,7 +5,7 @@ import heroVideoSource from "../assets/herovideo.mp4";
 import { getProducts } from "../services/catalogService";
 import { createInquiry } from "../services/inquiryService";
 import { COUNTRY_PHONE_OPTIONS, getCountryPhoneRule, getFullPhoneNumber, getPhonePattern } from "../countryPhone";
-import componentImage1 from "../assets/HeroImg/componentImg.jpeg";
+import componentImage1 from "../assets/HeroImg/componentImg.png";
 import about1 from "../assets/HeroImg/about1.jpeg";
 import about2 from "../assets/HeroImg/about2.jpeg";
 import about3 from "../assets/HeroImg/about3.jpeg";

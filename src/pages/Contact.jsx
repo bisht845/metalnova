@@ -146,13 +146,13 @@ export default function Contact() {
               </span>
             </div> */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-copper tracking-tight">
-              Contact Us & Global Engagement
+              Contact Us 
             </h2>
-            <p className="text-brand-copper text-[16px] max-w-xl mx-auto font-light leading-relaxed">
+            {/* <p className="text-brand-copper text-[16px] max-w-xl mx-auto font-light leading-relaxed">
               Metalnova welcomes strategic collaborations, joint venture
               exploration, and technical engineering inquiries from original
               equipment manufacturers (OEMs) and Tier-1 systems integrators.
-            </p>
+            </p> */}
           </div>
 
           {/* Cards Grid */}
@@ -184,7 +184,7 @@ export default function Contact() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
               <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                Delhi Office
+                Delhi Office ( Sales )
               </h4>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 17/164, First Floor,
@@ -207,7 +207,7 @@ export default function Contact() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
               <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                France
+                France ( International )
               </h4>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 Email:{" "}
@@ -217,14 +217,13 @@ export default function Contact() {
                 >
                   france@metalnova.in
                 </a>
-                <br />
-                Phone:{" "}
-                <a
+                {/* Phone:{" "} */}
+                {/* <a
                   href="tel:+33684944662"
                   className="hover:text-brand-copper transition-colors"
                 >
                   +33 (0)6 84 94 46 62
-                </a>
+                </a> */}
                 <br />
                 Technical partnership interface for EU switchgear manufacturers
                 and automotive design consortia.

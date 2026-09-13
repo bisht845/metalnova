@@ -54,7 +54,7 @@ export default function Products() {
           </div> */}
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
-            Our <span className="bg-gradient-to-r from-[#023C85] via-[#0172B0] to-[#023C85] bg-clip-text text-transparent">Product Catalog</span>
+            Our <span className="bg-gradient-to-r from-[#023C85] via-[#0172B0] to-[#023C85] bg-clip-text text-transparent">Products </span>
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">

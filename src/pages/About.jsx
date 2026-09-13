@@ -1,5 +1,5 @@
 import React from "react";
-
+import aboutImg from "../assets/aboutImage.jpeg"
 export default function About() {
   return (
     <div
@@ -79,29 +79,8 @@ export default function About() {
           <div className="lg:col-span-5 flex justify-center relative">
             <div className="absolute -inset-4  rounded-3xl blur-3xl pointer-events-none"></div>
             <div className="relative w-full max-w-sm p-8 border border-brand-copper/30 backdrop-blur-md hover:border-brand-copper/60 rounded-3xl shadow-lg transition-all duration-300 text-left space-y-6">
-              <div>
-                {/* <span className="text-[10px] font-bold text-brand-copper uppercase tracking-wider bg-brand-copper/10 px-3 py-1 rounded-full">
-                  Our Products (core segment )
-                </span> */}
-                <h4 className="text-2xl font-bold text-brand-copper mt-3">
-                  Our Products{" "}
-                </h4>
-              </div>
-
-              <ul className="space-y-4 text-[18px] font-normal text-brand-copper">
-                <li className="flex items-center gap-3 border-b border-brand-copper/20 pb-3">
-                  Solid Electrical Contact Rivets
-                </li>
-                <li className="flex items-center gap-3 border-b border-brand-copper/20 pb-3">
-                  Bimetal & Trimetal Electrical Contact Rivets
-                </li>
-                <li className="flex items-center gap-3 border-b  pb-3">
-                  Stamped Contact Assemblies
-                </li>
-                <li className="flex items-center gap-3 border-b border-brand-copper/20 pb-3">
-                  Silver Alloys & Wires
-                </li>
-              </ul>
+              <img src={aboutImg} alt="" className="w-full h-[400px] rounded-xl"/>
+              
             </div>
           </div>
         </div>
