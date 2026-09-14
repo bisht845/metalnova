@@ -46,7 +46,7 @@ export default function Footer() {
                 { id: 'home', label: 'Home' },
                 { id: 'about', label: 'About Us' },
                 { id: 'products', label: 'Our Products' },
-                { id: 'certifications', label: 'Quality Commitments' },
+                { id: 'certifications', label: 'Quality Commitment' },
                 { id: 'contact', label: 'Contact Us' }
               ].map((link) => (
                 <li key={link.id}>

@@ -64,7 +64,7 @@ export default function Certifications() {
       {/* ================= HEADER & QUALITY POLICY (PREMIUM DARK SYSTEM) ================= */}
       <section className="relative bg-[#060a12] text-brand-copper pt-36 pb-24 overflow-hidden px-4 sm:px-6 lg:px-8 border-b border-slate-900">
         {/* Subtle mesh background grid */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_-20%,rgba(0,210,255,0.09),transparent_60%)]"></div>
+        {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_-20%,rgba(0,210,255,0.09),transparent_60%)]"></div> */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_90%,rgba(200,125,85,0.06),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.008)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.008)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
@@ -77,7 +77,7 @@ export default function Certifications() {
               </span>
             </div> */}
             <h2 className="cert-theme-accent text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-copper tracking-tight">
-              Quality Commitments
+              Quality Commitment
             </h2>
             <p className="text-brand-copper text-[16px] max-w-3xl mx-auto font-light leading-relaxed">
              At Metalnova, quality is not an inspection carried out at the end of production—it is a discipline maintained throughout every stage of manufacturing. From raw material verification to final inspection, every process is carried out under controlled conditions to ensure our electrical contact components consistently meet customer specifications and international quality requirements.
@@ -158,43 +158,226 @@ Operating under an ISO 9001-certified Quality Management System, we manufacture 
             </div>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {[
-                "ISO 9001-Certified Quality Management System",
-                "CE-Compliant Products",
-                "RoHS-Compliant Manufacturing",
-                "Cadmium-Free Contact Materials",
-                "Batch Traceability",
-                "Material Verification",
-                "In-Process Inspection",
-                "Mechanical & Electrical Performance Testing",
-                "Continuous Process Improvement",
-              ].map((standard) => (
-                <li
-                  key={standard}
-                  className="quality-standards-card group min-h-[120px] flex items-center gap-4 rounded-2xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <span className="quality-standards-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-full">
-                    <svg
-                      className="h-6 w-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12.75 11.25 15 15 9.75M12 3l7 3v5c0 4.6-2.9 8.4-7 10-4.1-1.6-7-5.4-7-10V6l7-3Z"
-                      />
-                    </svg>
-                  </span>
-                  <h4 className="quality-standards-title text-[16px] font-extrabold leading-snug">
-                    {standard}
-                  </h4>
-                </li>
-              ))}
-            </ul>
+  {[
+    {
+      title: "ISO 9001-2015 Certified Quality Management System",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12h6m-6 4h6M7 3h7l4 4v14H7V3Z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="m14 3 4 4h-4V3Z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "CE-Compliant Products",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 8a4 4 0 1 0 0 8h2M15 8a4 4 0 1 1 0 8h-2"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "RoHS-Compliant Manufacturing",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 21c4-3 7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 3 8 7 11Z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 17c0-4 2-6 5-8"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Cadmium-Free Contact Materials",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+            strokeWidth="2"
+          />
+          <path
+            strokeLinecap="round"
+            strokeWidth="2"
+            d="m8 8 8 8"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Batch Traceability",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <circle cx="6" cy="6" r="2" strokeWidth="2" />
+          <circle cx="18" cy="18" r="2" strokeWidth="2" />
+          <path
+            strokeLinecap="round"
+            strokeWidth="2"
+            d="M8 7.5c3 1 5 2 7 5"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Material Verification",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <circle cx="11" cy="11" r="6" strokeWidth="2" />
+          <path
+            strokeLinecap="round"
+            strokeWidth="2"
+            d="m16 16 4 4"
+          />
+          <path
+            strokeLinecap="round"
+            strokeWidth="2"
+            d="m9 11 1.5 1.5L13.5 9"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "In-Process Inspection",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+          />
+          <circle cx="12" cy="12" r="2.5" strokeWidth="2" />
+        </svg>
+      ),
+    },
+    {
+      title: "Mechanical & Electrical Performance Testing",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 12h3l2-6 4 12 2-6h5"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Continuous Process Improvement",
+      icon: (
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M20 11a8 8 0 0 0-14.5-4L3 9"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M3 4v5h5"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 13a8 8 0 0 0 14.5 4L21 15"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M21 20v-5h-5"
+          />
+        </svg>
+      ),
+    },
+  ].map((standard) => (
+    <li
+      key={standard.title}
+      className="quality-standards-card group min-h-[120px] flex items-center gap-4 rounded-2xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <span className="quality-standards-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-full">
+        {standard.icon}
+      </span>
+
+      <h4 className="quality-standards-title text-[16px] font-extrabold leading-snug">
+        {standard.title}
+      </h4>
+    </li>
+  ))}
+</ul>
           </div>
         </div>
       </section>

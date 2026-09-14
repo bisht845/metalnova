@@ -9,9 +9,9 @@ export default function About() {
       {/* ================= HEADER INTRO (PREMIUM LIGHT SYSTEM) ================= */}
       <section className="relative pt-36 pb-24 overflow-hidden px-4 sm:px-6 lg:px-8 border-b border-brand-copper/30">
         {/* Subtle mesh background grid */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_-20%,rgba(0,210,255,0.06),transparent_60%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_90%,rgba(200,125,85,0.06),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(140,75,43,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(140,75,43,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+          {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_-20%,rgba(0,210,255,0.06),transparent_60%)]"></div> */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_90%,rgba(200,125,85,0.06),transparent_50%)]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(140,75,43,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(140,75,43,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
           {/* Left Text */}

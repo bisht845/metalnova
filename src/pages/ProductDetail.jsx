@@ -183,7 +183,7 @@ export default function ProductDetail() {
             )}
 
             <div className="space-y-4">
-              <h3 className="text-[16px] font-bold uppercase tracking-widest text-brand-copper">Overview Description</h3>
+              <h3 className="text-[16px] font-bold uppercase tracking-widest text-brand-copper"> Description</h3>
               <p className="text-[16px] sm:text-base text-brand-copper leading-relaxed font-light">
                 {product.description}
               </p>

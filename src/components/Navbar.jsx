@@ -50,7 +50,7 @@ export default function Navbar() {
     { id: 'home', label: 'Home', path: '/' },
     { id: 'about', label: 'About Us', path: '/about' },
     { id: 'products', label: 'Our Products', path: '/products' },
-    { id: 'certifications', label: 'Quality Commitments', path: '/certifications' },
+    { id: 'certifications', label: 'Quality Commitment', path: '/certifications' },
     { id: 'contact', label: 'Contact Us', path: '/contact' }
   ];
 
