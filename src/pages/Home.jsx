@@ -6,9 +6,10 @@ import { getProducts } from "../services/catalogService";
 import { createInquiry } from "../services/inquiryService";
 import { COUNTRY_PHONE_OPTIONS, getCountryPhoneRule, getFullPhoneNumber, getPhonePattern } from "../countryPhone";
 import componentImage1 from "../assets/HeroImg/componentImg.png";
-import about1 from "../assets/HeroImg/about1.jpeg";
-import about2 from "../assets/HeroImg/about2.jpeg";
-import about3 from "../assets/HeroImg/about3.jpeg";
+import ISO from "../assets/ISO.png"
+import CE from "../assets/ce.png"
+import ROHS from "../assets/ROHS.jpeg"
+import { Mail,Phone } from "lucide-react";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -346,7 +347,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-copper/30 bg-brand-copper/5">
               {/* <span className="w-1.5 h-1.5 rounded-full bg-brand-copper shadow-[0_0_8px_rgba(200,125,85,0.8)]"></span> */}
               <span className="text-[13.2px] font-bold uppercase tracking-[0.25em] text-brand-copper">
-                Precision Electrical Contact Components
+                Electrical Contract Solutions engineered for performance
               </span>
             </div>
 
@@ -356,9 +357,8 @@ export default function Home() {
             </h1>
 
             <p className="text-brand-copper text-[16px] sm:text-base max-w-xl leading-relaxed font-light">
-              Engineering performance electrical contact solutions that power
-              the industries of today and tomorrow. Built on microstructural
-              integrity and cadmium-free metallurgy.
+              Powering the industries of today and tomorrow. Through microstructural
+              integrity and cadmium-free metallurgy
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -411,7 +411,7 @@ export default function Home() {
               />
               {/* <div className="absolute inset-0 bg-gradient-to-t from-[#060a12]/80 via-transparent to-transparent"></div> */}
               {/* Overlay Glass Badge */}
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
+              <div className="absolute bottom-0 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
                   Microstructural Integrity
                 </p>
@@ -633,7 +633,7 @@ export default function Home() {
                 </svg>
               ),
               image:
-      "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.hindustantimes.com/auto/img/2026/06/29/960x540/hm_1782729750805_1782729759019_d6b1b416-1e76-420f-845f-3958106ccd64.jpg",
             },
             {
               title: "Automotive",
@@ -654,7 +654,7 @@ export default function Home() {
                 </svg>
               ),
                   image:
-      "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80",
+      "https://plus.unsplash.com/premium_photo-1682144832625-6a9d99ec0244?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             },
             {
               title: "Aviation",
@@ -795,71 +795,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
           {/* ISO 9001:2015 */}
           <div className="w-48 h-48 rounded-full border-2 border-brand-electric/20 hover:border-brand-electric bg-brand-copper flex flex-col items-center justify-center text-center shadow-[0_0_20px_rgba(0,210,255,0.05)] hover:shadow-[0_0_30px_rgba(0,210,255,0.15)] transition-all duration-300">
-            <svg
-              className="w-7 h-7 text-gray-200 mb-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-              />
-            </svg>
-            <p className="text-[16px] font-bold text-gray-200 tracking-widest uppercase leading-none">
-              ISO 9001:2015
-            </p>
-           {/* <p  className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
-              Certified
-            </p> */}
+           <img src={ISO} alt="ISO"  className="w-32 h-32 object-contain"/>
           </div>
 
           {/* CE */}
           <div className="w-48 h-48 rounded-full border-2 border-brand-electric/20 hover:border-brand-electric bg-brand-copper flex flex-col items-center justify-center text-center shadow-[0_0_20px_rgba(0,210,255,0.05)] hover:shadow-[0_0_30px_rgba(0,210,255,0.15)] transition-all duration-300">
-            <svg
-              className="w-7 h-7 text-gray-200 mb-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12h6M9 16h6M9 8h6"
-              />
-            </svg>
-            <p className="text-[16px] font-bold text-gray-200 tracking-widest uppercase leading-none">
-              CE
-            </p>
-            {/* <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
-              Certified
-            </p> */}
+            <img src={CE} alt="Ce" className="w-32 h-32 object-contain"/>
           </div>
 
           {/* RoHS */}
           <div className="w-48 h-48 rounded-full border-2 border-brand-electric/20 hover:border-brand-electric bg-brand-copper flex flex-col items-center justify-center text-center shadow-[0_0_20px_rgba(0,210,255,0.05)] hover:shadow-[0_0_30px_rgba(0,210,255,0.15)] transition-all duration-300">
-            <svg
-              className="w-7 h-7 text-gray-200 mb-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <p className="text-[16px] font-bold text-gray-200 tracking-widest uppercase leading-none">
-              RoHS
-            </p>
-            {/* <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
-              Compliant
-            </p> */}
+           <img src={ROHS} alt="ROHS" className="w-32 h-32 object-contain" />
           </div>
         </div>
 
@@ -1295,72 +1241,94 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              // label: "PRIMARY PLANT",
-              title: "Head Office & manufacture Unit (Karnal)",
-              desc: "Plot No 447, Sector-3, HSIIDC Industrial Area, Karnal-132001, Haryana.",
-              action: "Call Plant Support",
-              href: "tel:+919810422191",
-            },
-            {
-              // label: "SALES LIAISON",
-              title: " Sales Office (Delhi Office )",
-              desc: "METALNOVA, 17/164, First Floor, Subhash Nagar, New Delhi-110027.",
-              action: "Connect with Liaison",
-              href: "tel:+919034108181",
-            },
-            {
-              // label: "INTERNATIONAL",
-              title: "International (France Office)",
-              desc: "Managing international partner networks, technical specification agreements, and EU automotive compliance standards.",
-              action: "Email EU Desk",
-              href: "mailto:france@metalnova.in",
-            },
-          ].map((location) => (
-            <div
-              key={location.title}
-              className="p-8 bg-[#f8fafc] border border-brand-copper/20 rounded-2xl shadow-sm hover:border-brand-copper/50 transition-all duration-300 text-left space-y-4"
-            >
-              <div className="space-y-1">
-                <span className="text-[10px] font-bold text-brand-copper uppercase tracking-wider">
-                  {location.label}
-                </span>
-                <div className="flex items-center gap-2.5">
-                  <svg
-                    className="w-[22px] h-[22px] shrink-0 text-[#0177b5]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 21s7-5.1 7-12a7 7 0 10-14 0c0 6.9 7 12 7 12z"
-                    />
-                    <circle cx="12" cy="9" r="2.5" strokeWidth="2" />
-                  </svg>
-                  <h4 className="font-extrabold text-brand-copper text-lg sm:text-xl tracking-tight">
-                    {location.title}
-                  </h4>
-                </div>
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Head Office (Karnal) */}
+            <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
+              {/* <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
+                Head Office & manufacturing Unit 
+              </h4> */}
+               <p className="address-text text-center text-base font-extrabold text-brand-copper tracking-wide uppercase">
+              Head Office & manufacturing Unit 
+            </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-                {location.desc}
+                Plot No 447, Sector-3,
+                <br />
+                HSIIDC Industrial Area,
+                <br />
+                Karnal-132001, Haryana 
+                <br />
+                ( India )
               </p>
-              <a
-                href={location.href}
-                className="inline-flex items-center gap-1.5 text-[16px] font-bold text-brand-copper hover:text-brand-copper-dark transition-colors"
-              >
-                {/* {location.action} */}
-                <span className="text-[16px]">→</span>
-              </a>
+              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
+                <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
+                  Designation
+                </p>
+                <p className="text-[16px] font-bold text-brand-copper mt-1">
+                  Primary Manufacturing Plant & HQ
+                </p>
+              </div> */}
             </div>
-          ))}
+
+            {/* Delhi Office */}
+            <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
+                 <p className="address-text text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+              Sales Office 
+            </p>
+              <p className="text-[16px] text-brand-copper leading-relaxed font-light">
+                17/164, First Floor,
+                <br />
+                Subhash Nagar,
+                <br />
+                New Delhi-110027
+                <br />
+                ( India )
+              </p>
+              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
+                <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
+                  Designation
+                </p>
+                <p className="text-[16px] font-bold text-brand-copper mt-1">
+                  Sales Office
+                </p>
+              </div> */}
+            </div>
+
+            {/* France Contact */}
+            <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
+                 <p className="address-text text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+             International (France Office)
+            </p>
+          <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
+                <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
+
+                <span>
+                  Email:{" "}
+                  <a
+                    href="mailto:info@example.com"
+                    className="hover:text-[#0172B0] transition-colors"
+                  >
+                    info@example.com
+                  </a>
+                </span>
         </div>
+           <div className="mt-2 flex items-center gap-2">
+      <Phone className="w-5 h-5 text-[#0172B0] shrink-0" />
+
+      <span>
+        Phone:{" "}
+        <a
+          href="tel:+33684944662"
+          className="hover:text-[#0172B0] transition-colors"
+        >
+          +33 (0)6 84 94 46 62
+        </a>
+      </span>
+    </div>
+            </div>
+          </div>
       </section>
     </div>
   );

@@ -1692,3 +1692,6 @@ html body #public-site-shell .industry-card svg {
 html body #public-site-shell .industry-card .industry-icon-wrapper {
   border-color: #ffffff !important;
 }
+html body #public-site-shell p.address-text {
+  font-weight: 600 !important;
+}

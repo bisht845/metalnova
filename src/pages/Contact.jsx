@@ -7,7 +7,7 @@ import {
   getFullPhoneNumber,
   getPhonePattern,
 } from "../countryPhone";
-
+import { Mail,Phone } from "lucide-react";
 export default function Contact() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -138,37 +138,33 @@ export default function Contact() {
 
         <div className="max-w-7xl mx-auto space-y-16 relative z-10">
           {/* Header */}
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
-            {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-electric/30 bg-brand-electric/5">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-electric shadow-[0_0_8px_rgba(0,210,255,0.8)]"></span>
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-copper">
-                Get In Touch
-              </span>
-            </div> */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-copper tracking-tight">
-              Contact Us 
-            </h2>
-            {/* <p className="text-brand-copper text-[16px] max-w-xl mx-auto font-light leading-relaxed">
-              Metalnova welcomes strategic collaborations, joint venture
-              exploration, and technical engineering inquiries from original
-              equipment manufacturers (OEMs) and Tier-1 systems integrators.
-            </p> */}
-          </div>
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-copper tracking-tight">
+            Contact Us
+          </h2>
+
+          <div className="mx-auto mt-3 w-40 h-[2px] bg-brand-copper rounded-full"></div>
+      </div>
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Head Office (Karnal) */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
-              <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                Head Office & manufacture Unit (Karnal)
-              </h4>
+              {/* <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
+                Head Office & manufacturing Unit 
+              </h4> */}
+               <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+              Head Office & manufacturing Unit 
+            </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 Plot No 447, Sector-3,
                 <br />
                 HSIIDC Industrial Area,
                 <br />
-                Karnal-132001, Haryana
+                Karnal-132001, Haryana 
+                <br />
+                ( India )
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -183,15 +179,17 @@ export default function Contact() {
             {/* Delhi Office */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
-              <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                Sales Office (Delhi Office )
-              </h4>
+                 <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+              Sales Office 
+            </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 17/164, First Floor,
                 <br />
                 Subhash Nagar,
                 <br />
                 New Delhi-110027
+                <br />
+                ( India )
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -206,36 +204,35 @@ export default function Contact() {
             {/* France Contact */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
-              <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-               International (France Office)
-              </h4>
-              <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-                Email:{" "}
-                <a
-                  href="mailto:france@metalnova.in"
-                  className="hover:text-brand-copper transition-colors"
-                >
-                  france@metalnova.in
-                </a>
-                {/* Phone:{" "} */}
-                {/* <a
-                  href="tel:+33684944662"
-                  className="hover:text-brand-copper transition-colors"
-                >
-                  +33 (0)6 84 94 46 62
-                </a> */}
-                <br />
-                {/* Technical partnership interface for EU switchgear manufacturers
-                and automotive design consortia. */}
-              </p>
-              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
-                <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
-                  Designation
-                </p>
-                <p className="text-[16px] font-bold text-brand-copper mt-1">
-                  International Partner Office
-                </p>
-              </div> */}
+                 <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+             International (France Office)
+            </p>
+          <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
+                <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
+
+                <span>
+                  Email:{" "}
+                  <a
+                    href="mailto:info@example.com"
+                    className="hover:text-[#0172B0] transition-colors"
+                  >
+                    info@example.com
+                  </a>
+                </span>
+        </div>
+           <div className="mt-2 flex items-center gap-2">
+      <Phone className="w-5 h-5 text-[#0172B0] shrink-0" />
+
+      <span>
+        Phone:{" "}
+        <a
+          href="tel:+33684944662"
+          className="hover:text-[#0172B0] transition-colors"
+        >
+          +33 (0)6 84 94 46 62
+        </a>
+      </span>
+    </div>
             </div>
           </div>
         </div>
@@ -295,9 +292,9 @@ export default function Contact() {
           </div>
 
           <div className="p-8 bg-[#f8fafc] border border-slate-100 rounded-3xl flex flex-col justify-center space-y-4 text-left">
-            <h4 className="text-base font-extrabold text-brand-copper tracking-wide uppercase">
+            <p className="text-base font-bold text-brand-copper tracking-wide uppercase">
               Operational Hours
-            </h4>
+            </p>
             <p className="text-[16px] text-brand-copper0 leading-relaxed font-light">
               Monday - Saturday: 09:00 AM to 06:00 PM (IST)
               <br />

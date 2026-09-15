@@ -393,7 +393,7 @@ Operating under an ISO 9001-certified Quality Management System, we manufacture 
           <div className="space-y-2 text-left">
             {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Compliance Portfolio</p> */}
             <h4 className="text-3xl font-extrabold text-brand-copper tracking-tight">
-              Our Commitment
+              Our Certification
             </h4>
             <p className="text-brand-copper text-[16px] font-light">
               Every electrical contact component we manufacture represents the standards on which Metalnova was founded—precision, consistency, integrity, and accountability. We believe lasting customer relationships are built not through promises, but through delivering products that perform consistently, shipment after shipment

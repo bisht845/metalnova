@@ -53,9 +53,19 @@ export default function Products() {
             </span>
           </div> */}
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
-            Our <span className="bg-gradient-to-r from-[#023C85] via-[#0172B0] to-[#023C85] bg-clip-text text-transparent">Products </span>
-          </h1>
+          <div className="text-center">
+                      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Our{" "}
+                        <span className="bg-gradient-to-r from-[#023C85] via-[#0172B0] to-[#023C85] bg-clip-text text-transparent">
+                          Products
+                        </span>
+                      </h1>
+
+                      <div
+                        className="mx-auto mt-3 w-40 h-[2.5px] rounded-full"
+                        style={{ backgroundColor: "#0172B0" }}
+                      ></div>
+          </div>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
            Metalnova manufactures a comprehensive range of precision electrical contact components for the automotive, electrical, electronics, and industrial sectors. From standard products to customer-specific solutions, every component is manufactured with controlled processes, certified quality systems, and a commitment to consistent performance.
