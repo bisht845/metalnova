@@ -1286,7 +1286,7 @@ export default function Home() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight">
             Our Presence
           </h3>
-          {/* Divider */}Industries We Serve
+          {/* Divider */}
 
           <div className="flex items-center justify-center gap-3">
             <span className="w-12 h-[1px] bg-slate-200"></span>
