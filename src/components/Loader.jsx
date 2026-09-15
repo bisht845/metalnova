@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Logo from './Logo';
 
 export default function Loader({ onFinished }) {
   const [progress, setProgress] = useState(0);
@@ -74,8 +75,9 @@ export default function Loader({ onFinished }) {
 
           {/* Inner Glowing Core Panel with Logo text */}
           <div id="loader-panel" className="absolute inset-6 rounded-full border flex flex-col items-center justify-center">
-            <span className="text-[10px] font-extrabold tracking-[0.25em] text-brand-copper-dark uppercase animate-pulse">Metal</span>
-            <span className="text-gradient-copper text-[16px] font-black tracking-widest uppercase mt-0.5">Nova</span>
+            {/* <span className="text-[10px] font-extrabold tracking-[0.25em] text-brand-copper-dark uppercase animate-pulse">Metal</span>
+            <span className="text-gradient-copper text-[16px] font-black tracking-widest uppercase mt-0.5">Nova</span> */}
+            <Logo/>
           </div>
 
         </div>

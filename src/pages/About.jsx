@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../assets/aboutImage.jpeg"
+import aboutImg from "../assets/aboutImage.png"
 export default function About() {
   return (
     <div
@@ -66,7 +66,7 @@ export default function About() {
                 electrical contact manufacturing, consistency is not an
                 advantage—it is a requirement. Every component is produced with
                 strict control over materials, dimensions, and processes to
-                ensure repeatable performance. Through disciplined
+                ensure consistant performance. Through disciplined
                 manufacturing, predictable lead times, competitive pricing, and
                 transparent practices, we continue to build lasting
                 relationships with customers across domestic and international
@@ -145,7 +145,7 @@ export default function About() {
                 Advanced Cold Heading
               </h5>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-               High-speed cold-heading machines produce rivets with excellent dimensional accuracy, repeatability, and surface finish, ensuring consistent quality across production batches.
+               High-speed cold-heading machines produce rivets with excellent dimensional accuracy, consistant and surface finish, ensuring consistent quality across production batches.
               </p>
             </div>
 
@@ -163,7 +163,7 @@ export default function About() {
                 Wire Drawing & Calibration
               </h5>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-               Precision wire drawing and calibration processes produce silver alloy, copper, and composite wires to tight dimensional tolerances, providing consistent material quality for downstream manufacturing.
+               Precision wire drawing and calibration processes produce silver alloy, copper, and composite wires to specified dimensional tolerances, providing consistent material quality for downstream manufacturing.
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function About() {
               Our Commitment to Quality
             </h4>
             <p className="text-brand-copper text-[16px] leading-relaxed font-light">
-             Quality is built into every stage of our manufacturing process—not simply verified at the end. Operating under an ISO 9001-certified quality management system, we inspect every batch of precious metal inputs and conduct rigorous testing throughout production to ensure our electrical contact components meet demanding mechanical, electrical, and dimensional requirements. Our products are also CE- and RoHS-compliant, reflecting our commitment to internationally recognized quality and regulatory standards.
+             Quality is built into every stage of our manufacturing process—not simply verified at the end. Operating under an ISO 9001-certified quality management system, we inspect every batch of precious metal inputs and conduct rigorous testing throughout production to ensure our electrical contact components must meet demanding mechanical, electrical, and dimensional requirements. Our products are also CE- and RoHS-compliant, reflecting our commitment to internationally recognized quality and regulatory standards.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <div className="flex items-center gap-2 bg-white/90 border border-brand-copper/30 px-3.5 py-1.5 rounded-full shadow-xs">
@@ -192,7 +192,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2 bg-white/90 border border-brand-copper/30 px-3.5 py-1.5 rounded-full shadow-xs">
                 <span className="text-[16px] font-semibold text-brand-copper-dark">
-                  CE Compliant
+                  CE Marked
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-white/90 border border-brand-copper/30 px-3.5 py-1.5 rounded-full shadow-xs">

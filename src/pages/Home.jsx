@@ -12,6 +12,7 @@ import about3 from "../assets/HeroImg/about3.jpeg";
 
 export default function Home() {
   const navigate = useNavigate();
+
   const ambientVideoRef = useRef(null);
 
   useEffect(() => {
@@ -155,408 +156,7 @@ export default function Home() {
       id="home-page-custom"
       className="font-sans antialiased text-[#62666A] bg-white"
     >
-
-
-      {/* ================= HERO SECTION (PREMIUM DARK SYSTEM) ================= */}
-      <section
-        id="hero-section"
-        className="relative bg-gray-200 text-brand-copper pt-36 pb-24 overflow-hidden px-4 sm:px-6 lg:px-8"
-      >
-        {/* Subtle mesh background grid */}
-        <div className="absolute"></div>
-        <div className="absolute"></div>
-        <div className="absolute"></div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
-          {/* Left Column */}
-          <div className="lg:col-span-7 space-y-8 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-copper/30 bg-brand-copper/5">
-              {/* <span className="w-1.5 h-1.5 rounded-full bg-brand-copper shadow-[0_0_8px_rgba(200,125,85,0.8)]"></span> */}
-              <span className="text-[13.2px] font-bold uppercase tracking-[0.25em] text-brand-copper">
-                Precision Electrical Contact Components
-              </span>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight leading-[1.08] text-brand-copper">
-              {/* Precision Engineering.<br /> */}
-              {/* <span className="text-gradient-electric"> Electrification.</span> */}
-            </h1>
-
-            <p className="text-brand-copper text-[16px] sm:text-base max-w-xl leading-relaxed font-light">
-              Engineering performance electrical contact solutions that power
-              the industries of today and tomorrow. Built on microstructural
-              integrity and cadmium-free metallurgy.
-            </p>
-
-            <div className="flex flex-wrap gap-4 pt-2">
-              <a
-                href="#rfq-section"
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-gradient-to-r from-brand-electric-dark to-brand-electric hover:from-brand-electric hover:to-brand-electric-dark text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all shadow-[0_4px_20px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_25px_rgba(0,210,255,0.4)] cursor-pointer"
-              >
-                Request a Quote
-                <span className="ml-1 text-[16px]">→</span>       
-              </a>
-              <button
-                onClick={() => {
-                  navigate("/contact");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-transparent border border-white/20 hover:border-brand-electric hover:text-brand-copper text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer hover:bg-white/5"
-              >
-                Contact Us
-                <span className="ml-1 text-[16px]">→</span>
-              </button>
-            </div>
-
-            {/* Metrics Grid (Bordered segmented layout) */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-brand-card-border/50 mt-10">
-              {[
-                { value: "30+", label: "Years of Excellence" },
-                { value: "10+", label: "Countries Served" },
-                { value: "100%", label: "Quality Assurance" },
-              ].map((figure, index) => (
-                <div key={`${figure.label}-${index}`} className="space-y-1">
-                  <p className="text-3xl font-bold text-[#5c3321] tracking-tight">
-                    {figure.value}
-                  </p>
-                  <p className="text-[10px] text-[#5c3321] font-bold uppercase tracking-wider">
-                    {figure.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Floating Photo Column */}
-          <div className="lg:col-span-5 flex justify-center relative">
-            <div className="absolute -inset-4 bg-brand-electric/5 rounded-3xl blur-3xl pointer-events-none"></div>
-            <div className="relative w-full max-w-sm h-[320px] lg:h-[380px] rounded-2xl overflow-hidden border border-slate-700/30 shadow-2xl group animate-float">
-              <img
-                src={componentImage1}
-                alt="Precision electrical components"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#060a12]/80 via-transparent to-transparent"></div>
-              {/* Overlay Glass Badge */}
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
-                  Microstructural Integrity
-                </p>
-                <p className="text-[11px] text-brand-copper mt-1 font-light leading-relaxed">
-                  Electrical Contact Rivets and Assemblies Manufactured with OFHC Copper
-                  and Cadmium free Silver alloy wires
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= ABOUT METALNOVA (PREMIUM LIGHT SYSTEM) ================= */}
-      <section
-        id="about-section"
-        className="py-28 bg-white text-brand-copper px-4 sm:px-6 lg:px-8"
-      >
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-          {/* Left Text */}
-          <div className="w-full lg:flex-[5] lg:min-w-0 space-y-6">
-            <div className="space-y-2">
-              {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">
-                About Us
-              </p> */}
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight leading-tight">
-                Engineering Precision.
-                <br />
-                Delivering Performance.
-              </h2>
-            </div>
-
-            <p className="text-brand-copper text-[16px] leading-relaxed font-light">
-              Metalnova manufactures electrical contact components for
-              automotive, electrical, electronics, and industrial applications.
-              From standard parts to customer specific designs, every component
-              is produced with a focus on dimensional accuracy, material
-              integrity, and repeatable quality across every batch. We believe
-              manufacturing excellence is measured by consistency delivering
-              components that meet specifications, arrive on schedule, and
-              perform as expected.
-            </p>
-
-            <div className="pt-2">
-              <button
-                onClick={() => {
-                  navigate("/about");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 hover:border-brand-electric hover:bg-brand-electric/5 text-brand-copper hover:text-brand-copper text-[16px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer"
-              >
-                Know More
-                <span>→</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image Collage */}
-          <div className="w-full lg:flex-[4.375] lg:min-w-0 flex flex-col sm:flex-row gap-5 items-stretch">
-            {/* Large Image */}
-            <div className="w-full sm:flex-[7] sm:min-w-0 h-[290px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-white relative group flex items-center justify-center">
-              <img
-                src={about3}
-                alt="Precision electrical contact components"
-                loading="eager"
-                className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-
-            {/* Right Side Images */}
-            {/* <div className="w-full sm:flex-[5] sm:min-w-0 h-[290px] lg:h-[380px] flex flex-col gap-5">
-              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
-                <img
-                  src={about2}
-                  alt="Automated manufacturing"
-                  loading="lazy"
-                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-
-              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
-                <img
-                  src={about3}
-                  alt="Quality control"
-                  loading="lazy"
-                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= OUR PRODUCTS (PREMIUM DARK SYSTEM) ================= */}
-      <section
-        id="home-products-section"
-        className="relative py-28 bg-[#060a12] text-brand-copper overflow-hidden px-4 sm:px-6 lg:px-8 border-y border-slate-900"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(200,125,85,0.08),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.005)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.005)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
-
-        <div className="max-w-7xl mx-auto relative z-10 text-center space-y-4 mb-20">
-          <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-copper">
-            Our Products{" "}
-          </h3>
-          <p className="text-brand-copper text-[18px] max-w-xl mx-auto font-light leading-relaxed">
-            Performance electrical contact solutions engineered with
-            microstructural integrity and advanced metallurgy.
-          </p>
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-          {products.slice(0, 6).map((cat) => (
-            <div
-              key={cat.id}
-              onClick={() => {
-                navigate(`/product/${cat.id}`);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              className="group bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl overflow-hidden transition-all duration-300 cursor-pointer shadow-2xl flex flex-col justify-between"
-            >
-              {/* Framed Image Container */}
-              <div className="p-4">
-                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white flex items-center justify-center">
-                  {cat.img && (
-                    <img
-                      src={cat.img}
-                      alt={cat.title}
-                      loading="lazy"
-                      className="w-full h-full object-contain"
-                    />
-                  )}
-                </div>
-              </div>
-
-              {/* Card Details */}
-              <div className="p-6 pt-2 space-y-3 flex flex-col justify-between flex-1 text-left">
-                <div className="space-y-2">
-                  <h4 className="font-extrabold text-brand-copper text-[18px] tracking-wide group-hover:text-brand-copper transition-colors">
-                    {cat.title}
-                  </h4>
-                  <p className="text-[16px] text-brand-copper font-light leading-relaxed line-clamp-3">
-                    {cat.desc}
-                  </p>
-                </div>
-
-                <div className="pt-4 border-t border-slate-800/40 flex items-center justify-between text-[13px] font-bold uppercase tracking-widest text-brand-copper transition-colors">
-                  <span>View Specifications</span>
-                  <span className="transform group-hover:translate-x-1.5 transition-transform duration-300">
-                    →
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {products.length > 6 && (
-          <div className="text-center pt-12 relative z-10">
-            <button
-              onClick={() => {
-                navigate("/products");
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-transparent border border-white/20 hover:border-brand-electric hover:text-brand-copper text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer hover:bg-white/5"
-            >
-              View Full Product Catalog
-              <span className="ml-1.5 text-[16px]">→</span>
-            </button>
-          </div>
-        )}
-      </section>
-
-      {/* ================= INDUSTRIES WE SERVE (DARK BLUE   TECH) ================= */}
-      <section
-        id="industries-section"
-        className="py-28 bg-[#040810] text-brand-copper px-4 sm:px-6 lg:px-8"
-      >
-        <div className="max-w-7xl mx-auto text-center mb-14 sm:mb-16">
-          {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Global Sectors</p> */}
-          <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight">
-            Industries We Serve
-          </h3>
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {[
-            {
-              title: "Electrical Switchgear",
-              // desc: "Engineering   precision copper, brass, and aluminum components for next-generation switchgear systems and control panels. Our products guarantee optimum conductivity and uncompromised reliability in   voltage environments.",
-              icon: (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              ),
-            },
-            {
-              title: "Electric Vehicles (EV)",
-              // desc: "Powering the future of e-mobility with advanced,   conductivity components for EV battery packs and powertrain control systems. Engineered for exceptional thermal stability and long-cycle performance.",
-              icon: (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              ),
-            },
-            {
-              title: "Automotive",
-              // desc: "Manufacturing   strength, precision-engineered metal components and assemblies for passenger and commercial vehicles. Focused on structural integrity, durability, and strict industry compliance.",
-              icon: (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
-              ),
-            },
-            {
-              title: "Aviation",
-              // desc: "Delivering ultra-precision machined components and lightweight fabricated parts that comply with the stringent quality and safety benchmarks of the aerospace sector. Built for flawless performance under extreme stress.",
-              icon: (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                  />
-                </svg>
-              ),
-            },
-            {
-              title: "Industrial Equipment",
-              // desc: "Supplying robust,   end metal components for heavy-duty machinery and industrial automation. Specially engineered to withstand extreme mechanical stress, elevated temperatures, and continuous operations.",
-              icon: (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  />
-                </svg>
-              ),
-            },
-            {
-              title: "Renewable Energy",
-              // desc: "Offering specialized precision components for solar and green energy infrastructure. Designed for maximum power transfer efficiency, superior corrosion resistance, and decades of outdoor reliability.",
-              icon: (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"
-                  />
-                </svg>
-              ),
-            },
-          ].map((ind) => (
-            <div
-              key={ind.title}
-              className="min-h-[138px] p-6 bg-gray-200 border border-gray-200 rounded-2xl flex items-center gap-5 text-left shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="w-14 h-14 shrink-0 rounded-full border border-brand-electric/20 bg-brand-electric/5 flex items-center justify-center text-brand-copper">
-                {ind.icon}
-              </div>
-              <h4 className="font-bold text-brand-copper text-[17px] sm:text-[18px] leading-snug">
-                {ind.title}
-              </h4>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ================= WHY CHOOSE METALNOVA (ANIMATED TIMELINE) ================= */}
+  {/* ================= WHY CHOOSE METALNOVA (ANIMATED TIMELINE) ================= */}
       <section
         id="why-choose-us"
         className="relative py-28 bg-white text-brand-copper overflow-hidden px-4 sm:px-6 lg:px-8 border-t border-slate-100"
@@ -570,7 +170,7 @@ export default function Home() {
           <div className="text-center space-y-4 mb-24">
             {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Why Choose Us</p> */}
             <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-copper">
-              Why Choose Metalnova
+               Metalnova
             </h3>
             {/* Divider */}
             <div className="flex items-center justify-center gap-3">
@@ -730,6 +330,439 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ================= HERO SECTION (PREMIUM DARK SYSTEM) ================= */}
+      <section
+        id="hero-section"
+        className="relative bg-gray-200 text-brand-copper pt-36 pb-24 overflow-hidden px-4 sm:px-6 lg:px-8"
+      >
+        {/* Subtle mesh background grid */}
+        <div className="absolute"></div>
+        <div className="absolute"></div>
+        <div className="absolute"></div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+          {/* Left Column */}
+          <div className="lg:col-span-7 space-y-8 text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-copper/30 bg-brand-copper/5">
+              {/* <span className="w-1.5 h-1.5 rounded-full bg-brand-copper shadow-[0_0_8px_rgba(200,125,85,0.8)]"></span> */}
+              <span className="text-[13.2px] font-bold uppercase tracking-[0.25em] text-brand-copper">
+                Precision Electrical Contact Components
+              </span>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight leading-[1.08] text-brand-copper">
+              {/* Precision Engineering.<br /> */}
+              {/* <span className="text-gradient-electric"> Electrification.</span> */}
+            </h1>
+
+            <p className="text-brand-copper text-[16px] sm:text-base max-w-xl leading-relaxed font-light">
+              Engineering performance electrical contact solutions that power
+              the industries of today and tomorrow. Built on microstructural
+              integrity and cadmium-free metallurgy.
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="#rfq-section"
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-gradient-to-r from-brand-electric-dark to-brand-electric hover:from-brand-electric hover:to-brand-electric-dark text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all shadow-[0_4px_20px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_25px_rgba(0,210,255,0.4)] cursor-pointer"
+              >
+                Request a Quote
+                <span className="ml-1 text-[16px]">→</span>       
+              </a>
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-transparent border border-white/20 hover:border-brand-electric hover:text-brand-copper text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer hover:bg-white/5"
+              >
+                Contact Us
+                <span className="ml-1 text-[16px]">→</span>
+              </button>
+            </div>
+
+            {/* Metrics Grid (Bordered segmented layout) */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-brand-card-border/50 mt-10">
+              {[
+                { value: "30+", label: "Years of Excellence" },
+                { value: "10+", label: "Countries Served" },
+                { value: "100%", label: "Quality Assurance" },
+              ].map((figure, index) => (
+                <div key={`${figure.label}-${index}`} className="space-y-1">
+                  <p className="text-3xl font-bold text-[#5c3321] tracking-tight">
+                    {figure.value}
+                  </p>
+                  <p className="text-[10px] text-[#5c3321] font-bold uppercase tracking-wider">
+                    {figure.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Floating Photo Column */}
+          <div className="lg:col-span-5 flex justify-center relative">
+            <div className="absolute -inset-4 bg-brand-electric/5 rounded-3xl blur-3xl pointer-events-none"></div>
+            <div className="relative w-full max-w-sm h-[320px] lg:h-[380px] rounded-2xl overflow-hidden border border-slate-700/30 shadow-2xl group animate-float">
+              <img
+                src={componentImage1}
+                alt="Precision electrical components"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#060a12]/80 via-transparent to-transparent"></div> */}
+              {/* Overlay Glass Badge */}
+              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
+                  Microstructural Integrity
+                </p>
+                <p className="text-[11px] text-brand-copper mt-1 font-light leading-relaxed">
+                  Electrical Contact Rivets and Assemblies Manufactured with OFHC Copper
+                  and Cadmium free Silver alloy wires
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= ABOUT METALNOVA (PREMIUM LIGHT SYSTEM) ================= */}
+      <section
+        id="about-section"
+        className="py-28 bg-white text-brand-copper px-4 sm:px-6 lg:px-8"
+      >
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+          {/* Left Text */}
+          <div className="w-full lg:flex-[5] lg:min-w-0 space-y-6">
+            <div className="space-y-2">
+              {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">
+                About Us
+              </p> */}
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight leading-tight">
+                Engineering Precision.
+                <br />
+                Delivering Performance.
+              </h2>
+            </div>
+
+            <p className="text-brand-copper text-[16px] leading-relaxed font-light">
+              Metalnova manufactures electrical contact components for
+              automotive, electrical, electronics, and industrial applications.
+              From standard parts to customer specific designs, every component
+              is produced with a focus on dimensional accuracy, material
+              integrity, and consistency across every batch. We believe
+              manufacturing excellence is measured by consistently delivering
+              components that meet specifications, arrive on schedule, and
+              perform as expected.
+            </p>
+
+            <div className="pt-2">
+              <button
+                onClick={() => {
+                  navigate("/about");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 hover:border-brand-electric hover:bg-brand-electric/5 text-brand-copper hover:text-brand-copper text-[16px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer"
+              >
+                Know More
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Right Image Collage */}
+          <div className="w-full lg:flex-[4.375] lg:min-w-0 flex flex-col sm:flex-row gap-5 items-stretch">
+            {/* Large Image */}
+            <div className="w-full sm:flex-[7] sm:min-w-0 h-[290px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-white relative group flex items-center justify-center">
+              <video src={heroVideoSource} muted loop playsInline autoPlay className="w-full h-full object-cover"></video>
+            </div>
+
+            {/* Right Side Images */}
+            {/* <div className="w-full sm:flex-[5] sm:min-w-0 h-[290px] lg:h-[380px] flex flex-col gap-5">
+              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
+                <img
+                  src={about2}
+                  alt="Automated manufacturing"
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
+                <img
+                  src={about3}
+                  alt="Quality control"
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= OUR PRODUCTS (PREMIUM DARK SYSTEM) ================= */}
+      <section
+        id="home-products-section"
+        className="relative py-28 bg-[#060a12] text-brand-copper overflow-hidden px-4 sm:px-6 lg:px-8 border-y border-slate-900"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(200,125,85,0.08),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.005)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.005)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto relative z-10 text-center space-y-4 mb-20">
+          <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-copper">
+            Our Products{" "}
+          </h3>
+          <p className="text-brand-copper text-[18px] max-w-xl mx-auto font-light leading-relaxed">
+            Performance electrical contact solutions and assembalies.
+          </p>
+        </div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+          {products.slice(0, 6).map((cat) => (
+            <div
+              key={cat.id}
+              onClick={() => {
+                navigate(`/product/${cat.id}`);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="group bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl overflow-hidden transition-all duration-300 cursor-pointer shadow-2xl flex flex-col justify-between"
+            >
+              {/* Framed Image Container */}
+              <div className="p-4">
+                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white flex items-center justify-center">
+                  {cat.img && (
+                    <img
+                      src={cat.img}
+                      alt={cat.title}
+                      loading="lazy"
+                      className="w-full h-full object-contain"
+                    />
+                  )}
+                </div>
+              </div>
+
+              {/* Card Details */}
+              <div className="p-6 pt-2 space-y-3 flex flex-col justify-between flex-1 text-left">
+                <div className="space-y-2">
+                  <h4 className="font-extrabold text-brand-copper text-[18px] tracking-wide group-hover:text-brand-copper transition-colors">
+                    {cat.title}
+                  </h4>
+                  <p className="text-[16px] text-brand-copper font-light leading-relaxed line-clamp-3">
+                    {cat.desc}
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-slate-800/40 flex items-center justify-between text-[13px] font-bold uppercase tracking-widest text-brand-copper transition-colors">
+                  <span>View Specifications</span>
+                  <span className="transform group-hover:translate-x-1.5 transition-transform duration-300">
+                    →
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {products.length > 6 && (
+          <div className="text-center pt-12 relative z-10">
+            <button
+              onClick={() => {
+                navigate("/products");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-transparent border border-white/20 hover:border-brand-electric hover:text-brand-copper text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer hover:bg-white/5"
+            >
+              View Full Product Range
+              <span className="ml-1.5 text-[16px]">→</span>
+            </button>
+          </div>
+        )}
+      </section>
+
+      {/* ================= INDUSTRIES WE SERVE (DARK BLUE   TECH) ================= */}
+      <section
+        id="industries-section"
+        className="py-28 bg-[#040810] text-brand-copper px-4 sm:px-6 lg:px-8"
+      >
+        <div className="max-w-7xl mx-auto text-center mb-14 sm:mb-16">
+          {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Global Sectors</p> */}
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight">
+            Industries We Serve
+          </h3>
+        </div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            {
+              title: "Electrical Switchgear",
+              // desc: "Engineering   precision copper, brass, and aluminum components for next-generation switchgear systems and control panels. Our products guarantee optimum conductivity and uncompromised reliability in   voltage environments.",
+              icon: (
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              ),
+              image:
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
+            },
+            {
+              title: "Electric Vehicles (EV)",
+              // desc: "Powering the future of e-mobility with advanced,   conductivity components for EV battery packs and powertrain control systems. Engineered for exceptional thermal stability and long-cycle performance.",
+              icon: (
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              ),
+              image:
+      "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1200&q=80",
+            },
+            {
+              title: "Automotive",
+              // desc: "Manufacturing   strength, precision-engineered metal components and assemblies for passenger and commercial vehicles. Focused on structural integrity, durability, and strict industry compliance.",
+              icon: (
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                </svg>
+              ),
+                  image:
+      "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80",
+            },
+            {
+              title: "Aviation",
+              // desc: "Delivering ultra-precision machined components and lightweight fabricated parts that comply with the stringent quality and safety benchmarks of the aerospace sector. Built for flawless performance under extreme stress.",
+              icon: (
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+              ),
+              image:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
+            },
+            {
+              title: "Railways",
+              // desc: "Supplying robust,   end metal components for heavy-duty machinery and industrial automation. Specially engineered to withstand extreme mechanical stress, elevated temperatures, and continuous operations.",
+              icon: (
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                </svg>
+              ),
+              image:
+      "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80",
+            },
+            {
+              title: "Renewable Energy",
+              // desc: "Offering specialized precision components for solar and green energy infrastructure. Designed for maximum power transfer efficiency, superior corrosion resistance, and decades of outdoor reliability.",
+              icon: (
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"
+                  />
+                </svg>
+              ),
+              image:
+      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+            },
+          ].map((ind) => (
+            <div 
+  key={ind.title}
+  className="industry-card group relative min-h-[180px] overflow-hidden rounded-2xl 
+             border border-brand-electric/30 shadow-sm 
+             hover:-translate-y-1 hover:shadow-xl 
+             transition-all duration-300"
+>
+  {/* Background Image */}
+  <img
+    src={ind.image}
+    alt={ind.title}
+    className="absolute inset-0 w-full h-full object-cover 
+               transition-transform duration-500 
+               group-hover:scale-105"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/20 
+                  group-hover:bg-black/65 transition-all duration-300" />
+
+  {/* Content */}
+  <div className="relative z-10 min-h-[180px] p-6 
+                  flex items-center gap-5 text-left">
+
+    <div className="industry-icon-wrapper w-14 h-14 shrink-0 rounded-full 
+                    border border-white/70 
+                     flex items-center 
+                    justify-center text-white">
+      {ind.icon}
+    </div>
+
+    <span className="font-bold text-white text-[17px] sm:text-[18px] leading-snug">
+      {ind.title}
+    </span>
+
+  </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    
+
       {/* ================= CERTIFICATIONS (DARK THEME WITH QUALITY VIBE) ================= */}
       <section
         id="certifications-section"
@@ -778,9 +811,9 @@ export default function Home() {
             <p className="text-[16px] font-bold text-gray-200 tracking-widest uppercase leading-none">
               ISO 9001:2015
             </p>
-            <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
+           {/* <p  className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
               Certified
-            </p>
+            </p> */}
           </div>
 
           {/* CE */}
@@ -801,9 +834,9 @@ export default function Home() {
             <p className="text-[16px] font-bold text-gray-200 tracking-widest uppercase leading-none">
               CE
             </p>
-            <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
+            {/* <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
               Certified
-            </p>
+            </p> */}
           </div>
 
           {/* RoHS */}
@@ -824,9 +857,9 @@ export default function Home() {
             <p className="text-[16px] font-bold text-gray-200 tracking-widest uppercase leading-none">
               RoHS
             </p>
-            <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
+            {/* <p className="text-[9px] text-gray-200 uppercase tracking-widest mt-1.5">
               Compliant
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -866,8 +899,8 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-                Fill out the form and our technical engineering team will get
-                back to you with the best custom solution within 24 hours.
+                Fill out the form and our technical engineering  will get
+                back to you.
               </p>
 
               {/* Engineering Guarantees Checklist */}
@@ -959,8 +992,7 @@ export default function Home() {
               </h3>
               <p className="text-[16px] text-brand-copper font-light leading-relaxed">
                 Fill out the form below and share your detailed requirements.
-                Our team will get back to you with the best solution tailored to
-                your needs.
+                Our team will get back to you.
               </p>
             </div>
             {formSubmitted ? (
@@ -1254,7 +1286,8 @@ export default function Home() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight">
             Our Presence
           </h3>
-          {/* Divider */}
+          {/* Divider */}Industries We Serve
+
           <div className="flex items-center justify-center gap-3">
             <span className="w-12 h-[1px] bg-slate-200"></span>
             <span className="w-1.5 h-1.5 rotate-45 bg-brand-copper"></span>
@@ -1266,21 +1299,21 @@ export default function Home() {
           {[
             {
               // label: "PRIMARY PLANT",
-              title: "Karnal (Head Office)",
-              desc: "Plot No 447, Sector-3, HSIIDC Industrial Area, Karnal-132001, Haryana. Advanced multi-station   speed cold heading lines.",
+              title: "Head Office & manufacture Unit (Karnal)",
+              desc: "Plot No 447, Sector-3, HSIIDC Industrial Area, Karnal-132001, Haryana.",
               action: "Call Plant Support",
               href: "tel:+919810422191",
             },
             {
               // label: "SALES LIAISON",
-              title: "Delhi Office (Sales Office)",
-              desc: "METALNOVA, 17/164, First Floor, Subhash Nagar, New Delhi-110027. Regional operations, sales, partner relations, and logistics.",
+              title: " Sales Office (Delhi Office )",
+              desc: "METALNOVA, 17/164, First Floor, Subhash Nagar, New Delhi-110027.",
               action: "Connect with Liaison",
               href: "tel:+919034108181",
             },
             {
               // label: "INTERNATIONAL",
-              title: "France Office (International)",
+              title: "International (France Office)",
               desc: "Managing international partner networks, technical specification agreements, and EU automotive compliance standards.",
               action: "Email EU Desk",
               href: "mailto:france@metalnova.in",
@@ -1322,7 +1355,7 @@ export default function Home() {
                 href={location.href}
                 className="inline-flex items-center gap-1.5 text-[16px] font-bold text-brand-copper hover:text-brand-copper-dark transition-colors"
               >
-                {location.action}
+                {/* {location.action} */}
                 <span className="text-[16px]">→</span>
               </a>
             </div>

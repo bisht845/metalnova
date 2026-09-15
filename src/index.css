@@ -739,7 +739,6 @@ body {
 #home-page-custom li,
 #home-page-custom td,
 #home-page-custom label,
-#home-page-custom span,
 #home-page-custom strong,
 #home-page-custom b,
 #home-page-custom a {
@@ -927,7 +926,7 @@ html #public-site-shell > main {
 }
 
 html :is(#main-navbar, #main-navbar-custom, #mobile-drawer, #mobile-drawer-custom) {
-  background: var(--site-sidebar) !important;
+  /* background: var(--site-sidebar) !important; */
   border-color: var(--site-header-border) !important;
   font-family: var(--site-header-font) !important;
 }
@@ -1234,7 +1233,7 @@ html #certifications-page .certificate-card:hover .certificate-card-action .cert
  * brand-copper utility classes cannot restore the former #c87d55 color.
  */
 html body #public-site-shell :is(
-  #home-page, #home-page-custom, #about-page, #products-page,
+  #home-page, #home-page-custom,  #products-page,
   #products-page-custom, #product-detail-page, #certifications-page, #contact-page
 ) :is(h1, h2, h3, h4, h5, h6) {
   color: var(--site-heading) !important;
@@ -1677,4 +1676,19 @@ html body #product-detail-page .product-phone-prefix {
     filter: none !important;
   }
 }
+/* Industry Cards - Override Global Site Styles */
 
+html body #public-site-shell .industry-card span {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+html body #public-site-shell .industry-card svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+html body #public-site-shell .industry-card .industry-icon-wrapper {
+  border-color: #ffffff !important;
+}

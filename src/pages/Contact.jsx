@@ -161,7 +161,7 @@ export default function Contact() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
               <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                Head Office (Karnal)
+                Head Office & manufacture Unit (Karnal)
               </h4>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 Plot No 447, Sector-3,
@@ -184,7 +184,7 @@ export default function Contact() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
               <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                Delhi Office ( Sales )
+                Sales Office (Delhi Office )
               </h4>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 17/164, First Floor,
@@ -207,7 +207,7 @@ export default function Contact() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
               <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                France ( International )
+               International (France Office)
               </h4>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
                 Email:{" "}
@@ -225,8 +225,8 @@ export default function Contact() {
                   +33 (0)6 84 94 46 62
                 </a> */}
                 <br />
-                Technical partnership interface for EU switchgear manufacturers
-                and automotive design consortia.
+                {/* Technical partnership interface for EU switchgear manufacturers
+                and automotive design consortia. */}
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -251,7 +251,7 @@ export default function Contact() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <p className="text-[10px] font-bold text-brand-copper uppercase tracking-wider">
+                <p className="text-[16px] text-brand-copper uppercase tracking-wider">
                   Call Support
                 </p>
                 <ul className="space-y-2 text-[16px] text-brand-copper font-semibold">
@@ -283,7 +283,7 @@ export default function Contact() {
               </div>
 
               <div className="space-y-3">
-                <p className="text-[10px] font-bold text-brand-copper uppercase tracking-wider">
+                <p className="text-[14px]  text-brand-copper uppercase tracking-wider">
                   Write to Us
                 </p>
                 <p className="text-[16px] text-brand-copper0 leading-relaxed font-light">
@@ -303,10 +303,10 @@ export default function Contact() {
               <br />
               Sunday: Closed
             </p>
-            <p className="text-[16px] text-brand-copper font-bold uppercase tracking-wider">
+            {/* <p className="text-[16px] text-brand-copper font-bold uppercase tracking-wider">
               100% responsive on electrical technical drawings & custom solution
               within 24 hours.
-            </p>
+            </p> */}
           </div>
         </div>
       </section>

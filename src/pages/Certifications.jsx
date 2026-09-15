@@ -127,6 +127,11 @@ Operating under an ISO 9001-certified Quality Management System, we manufacture 
                     description:
                       "Cadmium-free materials, efficient precious-metal use, and responsible recovery and recycling practices minimize waste while preserving long-term product value.",
                   },
+                  {
+                    title: "Final Inspection & Quality Assurance",
+                    description:
+                      "Every finished component undergoes final inspection to verify dimensional accuracy, electrical performance, and compliance with specified quality requirements. Only products meeting established standards are approved for dispatch.",
+                  },
                 ].map((item) => (
                   <li
                     key={item.title}

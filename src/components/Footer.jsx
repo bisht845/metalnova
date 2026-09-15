@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="md:col-span-4 flex flex-col space-y-4">
             <Logo size="lg" showText={true} />
             <p className="text-[16px] text-brand-copper/90 leading-relaxed pr-4 mt-2">
-              At Metalnova, performance begins at the microscopic level. We specialize in the precision cold-heading of premium electrical contact rivets and clad materials.
+              At Metalnova, performance begins at the microscopic level. We specialize in menufacturing electrical contact riverts and assemblies.
             </p>
             {/* Certifications Quick Reference */}
             {/* <div className="flex gap-3 pt-2">

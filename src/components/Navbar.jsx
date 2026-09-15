@@ -111,12 +111,11 @@ export default function Navbar() {
       <header
         id="main-navbar-custom"
         style={{
-          backgroundColor: 'var(--site-sidebar)',
           borderColor: 'var(--site-header-border)',
           fontFamily: 'var(--site-header-font)'
         }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-2'
+          ? 'bg-white/90 backdrop-blur-md border-b border-slate-200 py-2'
           : 'bg-white py-4'
           }`}
       >
