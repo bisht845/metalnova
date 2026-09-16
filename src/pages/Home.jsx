@@ -244,7 +244,7 @@ export default function Home() {
                 {
                   title: "Quality You Can Rely On",
                   // subtitle: "Uncompromising Quality Standards",
-                  desc: "Operating under an ISO 9001:2015-certified quality management system, we manufacture CE- and RoHS-compliant products with rigorous inspection and testing throughout every stage of production.",
+                  desc: "Operating under an ISO 9001:2015-certified quality management system, we manufacture CE-Marked and RoHS-compliant products with rigorous inspection and testing throughout every stage of production.",
                   icon: (
                     <svg
                       className="w-5 h-5 text-brand-copper"
@@ -509,9 +509,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.005)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.005)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto relative z-10 text-center space-y-4 mb-20">
-          <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-copper">
-            Our Products{" "}
-          </h3>
+         <div className="text-center">
+                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight">
+                        Our{" "}
+                        <span className="bg-gradient-to-r from-[#023C85] via-[#0172B0] to-[#023C85] bg-clip-text text-transparent">
+                          Products
+                        </span>
+                      </h1>
+
+                      <div
+                        className="mx-auto mt-3 w-40 h-[2.5px] rounded-full"
+                        style={{ backgroundColor: "#0172B0" }}
+                      ></div>
+          </div>
+          
           <p className="text-brand-copper text-[18px] max-w-xl mx-auto font-light leading-relaxed">
             Performance electrical contact solutions and assembalies.
           </p>
@@ -654,7 +665,7 @@ export default function Home() {
                 </svg>
               ),
                   image:
-      "https://plus.unsplash.com/premium_photo-1682144832625-6a9d99ec0244?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1508974239320-0a029497e820?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             },
             {
               title: "Aviation",
@@ -1299,7 +1310,7 @@ export default function Home() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
                  <p className="address-text text-center text-base font-bold text-brand-copper tracking-wide uppercase">
-             International (France Office)
+             International 
             </p>
           <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
                 <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
@@ -1310,7 +1321,7 @@ export default function Home() {
                     href="mailto:info@example.com"
                     className="hover:text-[#0172B0] transition-colors"
                   >
-                    info@example.com
+                    france@metalnova.in
                   </a>
                 </span>
         </div>

@@ -205,7 +205,7 @@ export default function Contact() {
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
                  <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
-             International (France Office)
+             International
             </p>
           <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
                 <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
@@ -216,7 +216,7 @@ export default function Contact() {
                     href="mailto:info@example.com"
                     className="hover:text-[#0172B0] transition-colors"
                   >
-                    info@example.com
+                    france@metalnova.in
                   </a>
                 </span>
         </div>

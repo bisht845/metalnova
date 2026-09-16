@@ -182,7 +182,7 @@ export default function About() {
               Our Commitment to Quality
             </h4>
             <p className="text-brand-copper text-[16px] leading-relaxed font-light">
-             Quality is built into every stage of our manufacturing process—not simply verified at the end. Operating under an ISO 9001-certified quality management system, we inspect every batch of precious metal inputs and conduct rigorous testing throughout production to ensure our electrical contact components must meet demanding mechanical, electrical, and dimensional requirements. Our products are also CE-Marked and RoHS-compliant, reflecting our commitment to internationally recognized quality and regulatory standards.
+             Quality is built into every stage of our manufacturing process—not simply verified at the end. Operating under an ISO 9001-certified quality management system, we inspect every batch of precious metal inputs and conduct rigorous testing throughout production to ensure our electrical contact components must meet demanding mechanical, electrical, and dimensional requirements. Our products are also CE-Marked and RoHS-compliant, reflecting our commitment to ternationally recognized quality and regulatory standards.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <div className="flex items-center gap-2 bg-white/90 border border-brand-copper/30 px-3.5 py-1.5 rounded-full shadow-xs">
