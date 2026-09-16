@@ -204,7 +204,7 @@ export default function Home() {
                 {
                   title: "Precision Manufacturing",
                   // subtitle: "Precision That Powers Performance",
-                  desc: "Every electrical contact component is manufactured with tight dimensional control and repeatable production processes, ensuring consistent quality, reliable performance, and batch-to-batch accuracy.",
+                  desc: "Every electrical contact component is manufactured to precise dimensional tolerances using carefully controlled processes, ensuring consistent quality, reliable performance, and uniformity across production batches",
                   icon: (
                     <svg
                       className="w-5 h-5 text-brand-copper"
@@ -224,7 +224,7 @@ export default function Home() {
                 {
                   title: "Metallurgical Expertise",
                   // subtitle: "Advanced Material Expertise",
-                  desc: "Our expertise in working with precious metals and high-conductivity copper enables us to manufacture solid, bimetal, and trimetal electrical contact components that meet demanding electrical and mechanical requirements.",
+                  desc: "An in-depth understanding of metallurgical science guides the precision manufacturing of our solid silver and copper contact rivets, bimetal and trimetal contact rivets, clad strips, and contact assemblies—addressing today’s application needs while preparing for tomorrow’s electrical technologies.",
                   icon: (
                     <svg
                       className="w-5 h-5 text-brand-copper"
@@ -244,7 +244,7 @@ export default function Home() {
                 {
                   title: "Quality You Can Rely On",
                   // subtitle: "Uncompromising Quality Standards",
-                  desc: "Operating under an ISO 9001:2015-certified quality management system, we manufacture CE-Marked and RoHS-compliant products with rigorous inspection and testing throughout every stage of production.",
+                  desc: "Our ISO 9001:2015-certified quality management system integrates material verification, dimensional inspection, and performance testing throughout production, supporting consistent product quality and compliance with applicable CE and RoHS requirements.",
                   icon: (
                     <svg
                       className="w-5 h-5 text-brand-copper"
@@ -264,7 +264,7 @@ export default function Home() {
                 {
                   title: "Sustainable Manufacturing",
                   // subtitle: "Sustainable & Future-Ready Solutions",
-                  desc: "We support environmentally responsible manufacturing through the use of cadmium-free contact materials, efficient precious metal utilization, and responsible recovery and recycling practices without compromising product performance.",
+                  desc: "Cadmium-free contact materials, efficient use of precious metals, and responsible metal recovery and recycling help us reduce waste and conserve resources while maintaining product quality and performance.",
                   icon: (
                     <svg
                       className="w-5 h-5 text-brand-copper"
@@ -357,8 +357,7 @@ export default function Home() {
             </h1>
 
             <p className="text-brand-copper text-[16px] sm:text-base max-w-xl leading-relaxed font-light">
-              Powering the industries of today and tomorrow. Through microstructural
-              integrity and cadmium-free metallurgy
+              Powering the industries of today and tomorrow through microstructural integrity and cadmium free metallurgy
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -411,7 +410,7 @@ export default function Home() {
               />
               {/* <div className="absolute inset-0 bg-gradient-to-t from-[#060a12]/80 via-transparent to-transparent"></div> */}
               {/* Overlay Glass Badge */}
-              <div className="absolute bottom-0 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
+              {/* <div className="absolute bottom-0 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
                   Microstructural Integrity
                 </p>
@@ -419,7 +418,7 @@ export default function Home() {
                   Electrical Contact Rivets and Assemblies Manufactured with OFHC Copper
                   and Cadmium free Silver alloy wires
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1259,7 +1258,7 @@ export default function Home() {
               {/* <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
                 Head Office & manufacturing Unit 
               </h4> */}
-               <p className="address-text text-center text-base font-extrabold text-brand-copper tracking-wide uppercase">
+               <p className="address-text  text-base font-extrabold text-brand-copper tracking-wide uppercase">
               Head Office & manufacturing Unit 
             </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
@@ -1269,7 +1268,7 @@ export default function Home() {
                 <br />
                 Karnal-132001, Haryana 
                 <br />
-                ( India )
+                India 
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -1284,7 +1283,7 @@ export default function Home() {
             {/* Delhi Office */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
-                 <p className="address-text text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+                 <p className="address-text  text-base font-bold text-brand-copper tracking-wide uppercase">
               Sales Office 
             </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
@@ -1294,7 +1293,7 @@ export default function Home() {
                 <br />
                 New Delhi-110027
                 <br />
-                ( India )
+                India 
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -1309,7 +1308,7 @@ export default function Home() {
             {/* France Contact */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
-                 <p className="address-text text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+                 <p className="address-text  text-base font-bold text-brand-copper tracking-wide uppercase">
              International 
             </p>
           <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">

@@ -154,7 +154,7 @@ export default function Contact() {
               {/* <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
                 Head Office & manufacturing Unit 
               </h4> */}
-               <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+               <p className="text-base font-bold text-brand-copper tracking-wide uppercase">
               Head Office & manufacturing Unit 
             </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
@@ -164,7 +164,7 @@ export default function Contact() {
                 <br />
                 Karnal-132001, Haryana 
                 <br />
-                ( India )
+                 India 
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -179,7 +179,7 @@ export default function Contact() {
             {/* Delhi Office */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
-                 <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+                 <p className=" text-base font-bold text-brand-copper tracking-wide uppercase">
               Sales Office 
             </p>
               <p className="text-[16px] text-brand-copper leading-relaxed font-light">
@@ -189,7 +189,7 @@ export default function Contact() {
                 <br />
                 New Delhi-110027
                 <br />
-                ( India )
+                 India 
               </p>
               {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
                 <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
@@ -204,7 +204,7 @@ export default function Contact() {
             {/* France Contact */}
             <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
-                 <p className="text-center text-base font-bold text-brand-copper tracking-wide uppercase">
+                 <p className="text-base font-bold text-brand-copper tracking-wide uppercase">
              International
             </p>
           <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
