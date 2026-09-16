@@ -7,7 +7,13 @@ import {
   getFullPhoneNumber,
   getPhonePattern,
 } from "../countryPhone";
-import { Mail,Phone } from "lucide-react";
+import {
+  Building2,
+  MapPin,
+  Globe2,
+  Mail,
+  Phone,
+} from "lucide-react";
 export default function Contact() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -147,94 +153,159 @@ export default function Contact() {
       </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Head Office (Karnal) */}
-            <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
-              {/* <h4 className="text-base font-extrabold text-brand-copper uppercase tracking-wider flex items-center gap-2">
-                Head Office & manufacturing Unit 
-              </h4> */}
-               <p className="text-base font-bold text-brand-copper tracking-wide uppercase">
-              Head Office & manufacturing Unit 
-            </p>
-              <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-                Plot No 447, Sector-3,
-                <br />
-                HSIIDC Industrial Area,
-                <br />
-                Karnal-132001, Haryana 
-                <br />
-                 India 
-              </p>
-              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
-                <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
-                  Designation
-                </p>
-                <p className="text-[16px] font-bold text-brand-copper mt-1">
-                  Primary Manufacturing Plant & HQ
-                </p>
-              </div> */}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
-            {/* Delhi Office */}
-            <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-electric/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-electric/5 rounded-full blur-2xl"></div>
-                 <p className=" text-base font-bold text-brand-copper tracking-wide uppercase">
-              Sales Office 
-            </p>
-              <p className="text-[16px] text-brand-copper leading-relaxed font-light">
-                17/164, First Floor,
-                <br />
-                Subhash Nagar,
-                <br />
-                New Delhi-110027
-                <br />
-                 India 
-              </p>
-              {/* <div className="pt-4 border-t border-slate-800/40 mt-4">
-                <p className="text-[10px] text-brand-copper0 uppercase tracking-widest font-bold">
-                  Designation
-                </p>
-                <p className="text-[16px] font-bold text-brand-copper mt-1">
-                  Sales Office
-                </p>
-              </div> */}
-            </div>
+  {/* Head Office */}
+  <div className="group bg-white rounded-[24px] p-7 lg:p-8 border border-slate-200 shadow-[0_10px_35px_rgba(15,23,42,0.08)] hover:shadow-[0_15px_45px_rgba(15,23,42,0.12)] hover:-translate-y-1 transition-all duration-300">
 
-            {/* France Contact */}
-            <div className="group p-8 bg-[#0f172a]/40 border border-slate-800/80 hover:border-brand-copper/30 hover:bg-[#0f172a]/80 rounded-3xl transition-all duration-300 shadow-2xl text-left space-y-4 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-copper/5 rounded-full blur-2xl"></div>
-                 <p className="text-base font-bold text-brand-copper tracking-wide uppercase">
-             International
-            </p>
-          <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
-                <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
+    {/* Header */}
+    <div className="flex items-center gap-4 mb-7">
+      <div className="w-14 h-14 min-w-14 rounded-full bg-[#0172B0] flex items-center justify-center shadow-lg shadow-[#0172B0]/20">
+        <Building2
+          className="w-7 h-7 !text-white"
+          strokeWidth={1.7}
+        />
+      </div>
 
-                <span>
-                  Email:{" "}
-                  <a
-                    href="mailto:info@example.com"
-                    className="hover:text-[#0172B0] transition-colors"
-                  >
-                    france@metalnova.in
-                  </a>
-                </span>
-        </div>
-           <div className="mt-2 flex items-center gap-2">
-      <Phone className="w-5 h-5 text-[#0172B0] shrink-0" />
+      <div>
+        <p className="text-[18px] lg:text-[19px] font-extrabold text-slate-900 uppercase leading-tight">
+          Head Office &
+          <br />
+          Manufacturing Unit
+        </p>
 
-      <span>
-        Phone:{" "}
-        <a
-          href="tel:+33684944662"
-          className="hover:text-[#0172B0] transition-colors"
-        >
-          +33 (0)6 84 94 46 62
-        </a>
-      </span>
+        {/* <h3 className="mt-2 text-[14px] font-semibold text-slate-500 tracking-[0.3em] uppercase">
+          Karnal | Haryana
+        </h3> */}
+      </div>
     </div>
-            </div>
-          </div>
+
+    {/* Address */}
+    <div className="flex gap-3">
+      <MapPin className="w-5 h-5 mt-1 shrink-0 text-[#0172B0]" />
+
+      <p className="text-[15px] lg:text-[16px] text-slate-600 leading-7">
+        Plot No 447, Sector-3,
+        <br />
+        HSIIDC Industrial Area,
+        <br />
+        Karnal-132001, Haryana
+        <br />
+        India
+      </p>
+    </div>
+
+  </div>
+
+
+  {/* Sales Office */}
+  <div className="group bg-white rounded-[24px] p-7 lg:p-8 border border-slate-200 shadow-[0_10px_35px_rgba(15,23,42,0.08)] hover:shadow-[0_15px_45px_rgba(15,23,42,0.12)] hover:-translate-y-1 transition-all duration-300">
+
+    {/* Header */}
+    <div className="flex  gap-4 mb-7 items-center">
+     <div className="w-14 h-14 min-w-14 rounded-full bg-[#0172B0] flex items-center justify-center shadow-lg shadow-[#0172B0]/20">
+        <Building2
+          className="w-7 h-7 !text-white"
+          strokeWidth={1.7}
+        />
+      </div>
+
+      <div>
+        <p className="text-[18px] lg:text-[19px] font-extrabold text-slate-900 uppercase leading-tight">
+          Sales Office
+        </p>
+
+        {/* <h3 className="mt-2 text-[14x1px]  text-slate-500 tracking-[0.3em] uppercase">
+          New Delhi
+        </h3> */}
+      </div>
+    </div>
+
+    {/* Address */}
+    <div className="flex gap-3">
+      <MapPin className="w-5 h-5 mt-1 shrink-0 text-[#0172B0]" />
+
+      <p className="text-[15px] lg:text-[16px] text-slate-600 leading-7">
+        17/164, First Floor,
+        <br />
+        Subhash Nagar,
+        <br />
+        New Delhi-110027
+        <br />
+        India
+      </p>
+    </div>
+
+  </div>
+
+
+  {/* International */}
+  <div className="group bg-white rounded-[24px] p-7 lg:p-8 border border-slate-200 shadow-[0_10px_35px_rgba(15,23,42,0.08)] hover:shadow-[0_15px_45px_rgba(15,23,42,0.12)] hover:-translate-y-1 transition-all duration-300">
+
+    {/* Header */}
+    <div className="flex items-start gap-4 mb-7">
+      <div className="w-14 h-14 min-w-14 rounded-full bg-[#0172B0] flex items-center justify-center shadow-lg shadow-[#0172B0]/20">
+        <Globe2
+          className="w-7 h-7 !text-white"
+          strokeWidth={1.7}
+        />
+      </div>
+
+      <div>
+        <p className="text-[18px] lg:text-[19px] font-extrabold text-slate-900 uppercase leading-tight">
+          International
+        </p>
+
+        {/* <h3 className="mt-2 text-[14px] font-semibold text-slate-500 tracking-[0.3em] uppercase">
+          Global Support
+        </h3> */}
+      </div>
+    </div>
+
+    {/* Contact Information */}
+    <div className="space-y-5">
+
+      {/* Email */}
+      <div className="flex items-start gap-3">
+        <Mail className="w-5 h-5 mt-1 shrink-0 text-[#0172B0]" />
+
+        <div>
+          <p className="text-[13px] font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            Email
+          </p>
+
+          <a
+            href="mailto:france@metalnova.in"
+            className="text-[15px] lg:text-[16px] text-slate-600 hover:text-[#0172B0] transition-colors"
+          >
+            france@metalnova.in
+          </a>
+        </div>
+      </div>
+
+      {/* Phone */}
+      <div className="flex items-start gap-3">
+        <Phone className="w-5 h-5 mt-1 shrink-0 text-[#0172B0]" />
+
+        <div>
+          <p className="text-[13px] font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            Phone
+          </p>
+
+          <a
+            href="tel:+33684944662"
+            className="text-[15px] lg:text-[16px] text-slate-600 hover:text-[#0172B0] transition-colors"
+          >
+            +33 (0)6 84 94 46 62
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
         </div>
       </section>
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import isoCert from "../assets/METALNOVA QMS ISO 9001 Certificate.pdf";
-import ceCert from "../assets/METALNOVA - CE Certificate.pdf";
-import rohsCert from "../assets/METALNOVA - RoHS Certificate.pdf";
+import isoCert from "../assets/ISO 9001 Certificate_page-0001.jpg";
+import ceCert from "../assets/CE Certificate_page-0001.jpg";
+import rohsCert from "../assets/RoHS Certificate_page-0001.jpg";
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -393,7 +393,7 @@ Operating under an ISO 9001-certified Quality Management System, we manufacture 
           <div className="space-y-2 text-left">
             {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Compliance Portfolio</p> */}
             <h4 className="text-3xl font-extrabold text-brand-copper tracking-tight">
-              Our Certification
+              Our Certifications
             </h4>
             <p className="text-brand-copper text-[16px] font-light">
               Every electrical contact component we manufacture represents the standards on which Metalnova was founded—precision, consistency, integrity, and accountability. We believe lasting customer relationships are built not through promises, but through delivering products that perform consistently, shipment after shipment
@@ -402,28 +402,22 @@ Operating under an ISO 9001-certified Quality Management System, we manufacture 
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {certificationsList.map((cert) => (
-              <button
+              <div
                 key={cert.id}
-                onClick={() => setSelectedCert(cert)}
-                className="certificate-card relative block w-full max-w-[340px] sm:max-w-sm mx-auto aspect-[1/1.414] border rounded-2xl shadow-md overflow-hidden transition-all duration-300 sm:hover:translate-y-[-6px] hover:shadow-2xl group cursor-pointer text-left focus:outline-none"
+                className="certificate-card relative block w-full max-w-[340px] sm:max-w-sm mx-auto aspect-[1/1.414] shadow-md overflow-hidden transition-all duration-300 sm:hover:translate-y-[-6px] hover:shadow-2xl group cursor-pointer text-left focus:outline-none"
               >
                 {/* Embed PDF page 1 as card preview */}
-                <iframe
-                  src={`${cert.pdf}#page=1&toolbar=0&navpanes=0&scrollbar=0&view=Fit&zoom=page-fit`}
-                  className="absolute inset-0 w-full h-full border-0 pointer-events-none select-none"
-                  scrolling="no"
-                  title={cert.title}
-                />
+                <img src={cert.pdf} alt="" />
 
                 {/* Dark Hover Overlay & Center Banner Button */}
-                <div className="certificate-card-overlay absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                {/* <div className="certificate-card-overlay absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <div className="certificate-card-action border font-bold text-[12px] uppercase tracking-widest px-6 py-3 rounded-xl shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                     <span className="certificate-card-action-text">
                       Click To View
                     </span>
                   </div>
-                </div>
-              </button>
+                </div> */}
+              </div>
             ))}
           </div>
         </div>
