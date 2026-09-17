@@ -243,7 +243,7 @@ export default function Contact() {
   <div className="group bg-white rounded-[24px] p-7 lg:p-8 border border-slate-200 shadow-[0_10px_35px_rgba(15,23,42,0.08)] hover:shadow-[0_15px_45px_rgba(15,23,42,0.12)] hover:-translate-y-1 transition-all duration-300">
 
     {/* Header */}
-    <div className="flex items-start gap-4 mb-7">
+    <div className="flex items-center gap-4 mb-7">
       <div className="w-14 h-14 min-w-14 rounded-full bg-[#0172B0] flex items-center justify-center shadow-lg shadow-[#0172B0]/20">
         <Globe2
           className="w-7 h-7 !text-white"
