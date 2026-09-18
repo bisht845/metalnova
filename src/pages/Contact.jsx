@@ -194,7 +194,19 @@ export default function Contact() {
         India
       </p>
     </div>
+ <div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
+                <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
 
+                <span>
+                 
+                  <a
+                    href="mailto:info@example.com"
+                    className="hover:text-[#0172B0] transition-colors"
+                  >
+                    info@metalnova.in
+                  </a>
+                </span>
+        </div>
   </div>
 
 
@@ -235,7 +247,19 @@ export default function Contact() {
         India
       </p>
     </div>
+<div className="flex items-center gap-2 text-[16px] text-brand-copper leading-relaxed font-light">
+                <Mail className="w-5 h-5 text-[#0172B0] shrink-0" />
 
+                <span>
+                 
+                  <a
+                    href="mailto:info@example.com"
+                    className="hover:text-[#0172B0] transition-colors"
+                  >
+                    akhilesh@metalnova.in
+                  </a>
+                </span>
+        </div>
   </div>
 
 
@@ -305,7 +329,7 @@ export default function Contact() {
 
   </div>
 
-</div>
+          </div>
         </div>
       </section>
 
