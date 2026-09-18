@@ -176,15 +176,19 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center space-y-4 mb-24">
             {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Why Choose Us</p> */}
-            <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-copper">
-               Metalnova
-            </h3>
-            {/* Divider */}
-            <div className="flex items-center justify-center gap-3">
-              <span className="w-12 h-[1px] bg-slate-200"></span>
-              <span className="w-1.5 h-1.5 rotate-45 bg-brand-copper"></span>
-              <span className="w-12 h-[1px] bg-slate-200"></span>
-            </div>
+            <div className="text-center">
+                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight">
+                       Metalnova
+                          
+                      
+                      </h1>
+
+                      <div
+                        className="mx-auto mt-3 w-30 h-[2.5px] rounded-full"
+                        style={{ backgroundColor: "#0172B0" }}
+                      ></div>
+          </div>
+           
             <p className="text-brand-copper text-[16px] max-w-xl mx-auto font-light leading-relaxed">
               From precise metallurgy to certified delivery, explore our core
               strengths mapped across our performance engineering timeline.
@@ -833,7 +837,7 @@ export default function Home() {
             }}
             className="inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-brand-copper to-brand-copper-dark hover:from-brand-copper-dark hover:to-brand-copper text-white text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all duration-300 shadow-[0_4px_20px_rgba(200,125,85,0.25)] hover:shadow-[0_4px_25px_rgba(200,125,85,0.4)] cursor-pointer"
           >
-            View All Quality Standards
+            View Our Quality Standards
             <span className="ml-2 text-[16px]">→</span>
           </button>
         </div>
