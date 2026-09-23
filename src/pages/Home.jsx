@@ -165,6 +165,91 @@ export default function Home() {
     >
 
 
+      {/* ================= ABOUT METALNOVA (PREMIUM LIGHT SYSTEM) ================= */}
+      <section
+        id="about-section"
+        className="py-20 bg-white text-brand-copper px-4 sm:px-6 lg:px-8"
+      >
+          <div className="text-center mb-5">
+                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight ">
+                        Metalnova
+                      </h1>
+
+                      <div
+                        className="mx-auto mt-3 w-40 h-[2.5px] rounded-full"
+                        style={{ backgroundColor: "#0172B0" }}
+                      ></div>
+          </div>
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+          {/* Left Text */}
+          <div className="w-full lg:flex-[5] lg:min-w-0 space-y-6">
+            <div className="space-y-2">
+              {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">
+                About Us
+              </p> */}
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight leading-tight">
+                Engineering Precision.
+                <br />
+                Delivering Performance.
+              </h2>
+            </div>
+
+            <p className="text-brand-copper text-[16px] leading-relaxed font-light">
+              Metalnova manufactures electrical contact components for
+              automotive, electrical, electronics, and industrial applications.
+              From standard parts to customer specific designs, every component
+              is produced with a focus on dimensional accuracy, material
+              integrity, and consistency across every batch. We believe
+              manufacturing excellence is measured by consistently delivering
+              components that meet specifications, arrive on schedule, and
+              perform as expected.
+            </p>
+
+            <div className="pt-2">
+              <button
+                onClick={() => {
+                  navigate("/about");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 hover:border-brand-electric hover:bg-brand-electric/5 text-brand-copper hover:text-brand-copper text-[16px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer"
+              >
+                Know More
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Right Image Collage */}
+          <div className="w-full lg:flex-[4.375] lg:min-w-0 flex flex-col sm:flex-row gap-5 items-stretch">
+            {/* Large Image */}
+            <div className="w-full sm:flex-[7] sm:min-w-0 h-[290px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-white relative group flex items-center justify-center">
+              <video src={heroVideoSource} muted loop playsInline autoPlay className="w-full h-full object-cover"></video>
+            </div>
+
+            {/* Right Side Images */}
+            {/* <div className="w-full sm:flex-[5] sm:min-w-0 h-[290px] lg:h-[380px] flex flex-col gap-5">
+              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
+                <img
+                  src={about2}
+                  alt="Automated manufacturing"
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
+                <img
+                  src={about3}
+                  alt="Quality control"
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+      
   {/* ================= OUR PRODUCTS (PREMIUM DARK SYSTEM) ================= */}
       <section
         id="home-products-section"
@@ -176,7 +261,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10 text-center space-y-4 mb-20">
          <div className="text-center">
                       <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight mt-6">
-                        Metalnova
+                        Our Products
                       </h1>
 
                       <div
@@ -252,80 +337,6 @@ export default function Home() {
         )}
       </section>
 
-      {/* ================= ABOUT METALNOVA (PREMIUM LIGHT SYSTEM) ================= */}
-      <section
-        id="about-section"
-        className="py-20 bg-white text-brand-copper px-4 sm:px-6 lg:px-8"
-      >
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-          {/* Left Text */}
-          <div className="w-full lg:flex-[5] lg:min-w-0 space-y-6">
-            <div className="space-y-2">
-              {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">
-                About Us
-              </p> */}
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight leading-tight">
-                Engineering Precision.
-                <br />
-                Delivering Performance.
-              </h2>
-            </div>
-
-            <p className="text-brand-copper text-[16px] leading-relaxed font-light">
-              Metalnova manufactures electrical contact components for
-              automotive, electrical, electronics, and industrial applications.
-              From standard parts to customer specific designs, every component
-              is produced with a focus on dimensional accuracy, material
-              integrity, and consistency across every batch. We believe
-              manufacturing excellence is measured by consistently delivering
-              components that meet specifications, arrive on schedule, and
-              perform as expected.
-            </p>
-
-            <div className="pt-2">
-              <button
-                onClick={() => {
-                  navigate("/about");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 hover:border-brand-electric hover:bg-brand-electric/5 text-brand-copper hover:text-brand-copper text-[16px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer"
-              >
-                Know More
-                <span>→</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image Collage */}
-          <div className="w-full lg:flex-[4.375] lg:min-w-0 flex flex-col sm:flex-row gap-5 items-stretch">
-            {/* Large Image */}
-            <div className="w-full sm:flex-[7] sm:min-w-0 h-[290px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-white relative group flex items-center justify-center">
-              <video src={heroVideoSource} muted loop playsInline autoPlay className="w-full h-full object-cover"></video>
-            </div>
-
-            {/* Right Side Images */}
-            {/* <div className="w-full sm:flex-[5] sm:min-w-0 h-[290px] lg:h-[380px] flex flex-col gap-5">
-              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
-                <img
-                  src={about2}
-                  alt="Automated manufacturing"
-                  loading="lazy"
-                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-
-              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
-                <img
-                  src={about3}
-                  alt="Quality control"
-                  loading="lazy"
-                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </section>
 
       {/* ================= INDUSTRIES WE SERVE (DARK BLUE   TECH) ================= */}
       <section
