@@ -704,18 +704,18 @@ export default function Contact() {
           </div>
 
           {/* Styled Mock Google Map (Very Premium Dark Mode Map) */}
-          <div className="lg:col-span-5 bg-[#0f172a]/40 border border-slate-800/80 p-8 rounded-3xl h-[530px] flex flex-col justify-between relative overflow-hidden shadow-2xl backdrop-blur-md">
-            <div className="space-y-1 text-left">
+          {/* <div className="lg:col-span-5 bg-[#0f172a]/40 border border-slate-800/80 p-8 rounded-3xl h-[530px] flex flex-col justify-between relative overflow-hidden shadow-2xl backdrop-blur-md"> */}
+            {/* <div className="space-y-1 text-left">
               <h4 className="text-[16px] font-bold uppercase tracking-widest text-brand-copper">
                 Factory Location
               </h4>
               <p className="text-[16px] text-brand-copper font-light">
                 Karnal HSIIDC Industrial Area manufacturing hub.
               </p>
-            </div>
+            </div> */}
 
             {/* Highly Premium Google Map Embed */}
-            <div className="flex-1 my-6 bg-[#06080d] border border-slate-800/60 rounded-xl relative overflow-hidden">
+            {/* <div className="flex-1 my-6 bg-[#06080d] border border-slate-800/60 rounded-xl relative overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1830.4750440190167!2d76.97734869839479!3d29.666330100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e714e4a004157%3A0x378a4e85e07ad7f5!2sParadise%20Electrometal!5e1!3m2!1sen!2sin!4v1781452875769!5m2!1sen!2sin"
                 width="100%"
@@ -730,12 +730,12 @@ export default function Contact() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0 w-full h-full"
               ></iframe>
-            </div>
+            </div> */}
 
             {/* <div className="text-[11px] text-brand-copper0 text-center leading-relaxed font-light">
               Industrial Area Sector-3 is situated directly off National Highway 44 (GT Road), allowing smooth transport access.
             </div> */}
-          </div>
+          {/* </div> */}
         </div>
       </section>
     </div>

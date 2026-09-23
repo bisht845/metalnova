@@ -4,9 +4,9 @@ import logoImg from '../assets/logo.png';
 export default function Logo({ className = '', size = 'md' }) {
   // Height sizing based on prop
   const heightClass = {
-    sm: 'h-8 lg:h-9',
+    sm: 'h-8 lg:h-10',
     md: 'h-10 lg:h-11',
-    nav: 'h-[48px] lg:h-[52.8px]',
+    nav: 'h-[48px] lg:h-[54px]',
     lg: 'h-14 lg:h-16'
   }[size] || 'h-10 lg:h-11';
 

@@ -163,353 +163,9 @@ export default function Home() {
       id="home-page-custom"
       className="font-sans antialiased text-[#62666A] bg-white"
     >
-  {/* ================= WHY CHOOSE METALNOVA (ANIMATED TIMELINE) ================= */}
-      <section
-        id="why-choose-us"
-        className="relative py-28 bg-white text-brand-copper overflow-hidden px-4 sm:px-6 lg:px-8 border-t border-slate-100"
-      >
-        {/* Subtle decorative background glow shapes */}
-        <div className="why-choose-glow absolute top-0 right-0 w-[400px] h-[400px] bg-brand-copper/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="why-choose-glow absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-electric/5 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center space-y-4 mb-24">
-            {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Why Choose Us</p> */}
-            <div className="text-center">
-                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight">
-                       Metalnova
-                          
-                      
-                      </h1>
 
-                      <div
-                        className="mx-auto mt-3 w-30 h-[2.5px] rounded-full"
-                        style={{ backgroundColor: "#0172B0" }}
-                      ></div>
-          </div>
-           
-            <p className="text-brand-copper text-[16px] max-w-xl mx-auto font-light leading-relaxed">
-              From precise metallurgy to certified delivery, explore our core
-              strengths mapped across our performance engineering timeline.
-            </p>
-          </div>
-
-          {/* Timeline Center Area */}
-          <div className="relative max-w-4xl mx-auto">
-            {/* Vertical Line with flowing animated gradient */}
-            <div
-              className="absolute left-6 md:left-1/2 top-4 bottom-4 w-1 rounded-full transform md:-translate-x-1/2 overflow-hidden pointer-events-none"
-              style={{ backgroundColor: "#0177b5" }}
-            >
-              <div
-                className="w-full h-full rounded-full"
-                style={{ backgroundColor: "#0177b5" }}
-              ></div>
-            </div>
-
-            {/* Timeline Steps */}
-            <div className="space-y-10 md:space-y-12">
-              {[
-                {
-                  title: "Precision Manufacturing",
-                  // subtitle: "Precision That Powers Performance",
-                  desc: "Every electrical contact component is manufactured to precise dimensional tolerances using carefully controlled processes, ensuring consistent quality, reliable performance, and uniformity across production batches",
-                  icon: (
-                    <svg
-                      className="w-5 h-5 text-brand-copper"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  ),
-                },
-                {
-                  title: "Metallurgical Expertise",
-                  // subtitle: "Advanced Material Expertise",
-                  desc: "An in-depth understanding of metallurgical science guides the precision manufacturing of our solid silver and copper contact rivets, bimetal and trimetal contact rivets, clad strips, and contact assemblies—addressing today’s application needs while preparing for tomorrow’s electrical technologies.",
-                  icon: (
-                    <svg
-                      className="w-5 h-5 text-brand-copper"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                      />
-                    </svg>
-                  ),
-                },
-                {
-                  title: "Quality You Can Rely On",
-                  // subtitle: "Uncompromising Quality Standards",
-                  desc: "Our ISO 9001:2015-certified quality management system integrates material verification, dimensional inspection, and performance testing throughout production, supporting consistent product quality and compliance with applicable CE and RoHS requirements.",
-                  icon: (
-                    <svg
-                      className="w-5 h-5 text-brand-copper"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                      />
-                    </svg>
-                  ),
-                },
-                {
-                  title: "Sustainable Manufacturing",
-                  // subtitle: "Sustainable & Future-Ready Solutions",
-                  desc: "Cadmium-free contact materials, efficient use of precious metals, and responsible metal recovery and recycling help us reduce waste and conserve resources while maintaining product quality and performance.",
-                  icon: (
-                    <svg
-                      className="w-5 h-5 text-brand-copper"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                      />
-                    </svg>
-                  ),
-                },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className={`relative flex flex-col md:flex-row items-start md:items-center ${i % 2 === 0 ? "" : "md:flex-row-reverse"}`}
-                >
-                  {/* Timeline Center Bullet with Pulse Animation */}
-                  <div className="absolute left-6 md:left-1/2 top-4 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex items-center justify-center">
-                    <span className="w-8 h-8 rounded-full border-2 border-[#0177b5] bg-white shadow-md flex items-center justify-center transition-transform duration-300 relative">
-                      {/* Outer pulse wave */}
-                      <span className="absolute inset-0 rounded-full bg-[#0177b5]/20 animate-ping opacity-75"></span>
-                      <span className="w-3 h-3 rounded-full bg-[#0177b5] z-10"></span>
-                    </span>
-                  </div>
-
-                  {/* Timeline Card */}
-                  <div
-                    className={`w-full md:w-[calc(50%-2.5rem)] pl-16 md:pl-0 ${i % 2 === 0 ? "md:text-right md:pr-10" : "md:text-left md:pl-10"}`}
-                  >
-                    <div className="why-timeline-card group bg-[#f8fafc] border border-slate-100 hover:border-brand-copper/25 rounded-2xl p-6 shadow-sm hover:shadow-[0_15px_30px_rgba(0,0,0,0.03)] transition-all duration-300 relative overflow-hidden text-left">
-                      <div className="why-timeline-card-heading flex gap-3 items-center mb-3">
-                        <div
-                          className={`w-8 h-8 rounded-lg ${i % 2 === 0 ? "bg-brand-copper/5 border border-brand-copper/20" : "bg-brand-electric/5 border border-brand-electric/20"} flex items-center justify-center`}
-                        >
-                          {item.icon}
-                        </div>
-                        <div>
-                          <span className="text-[10px] font-bold text-brand-copper uppercase tracking-widest">
-                            {item.subtitle}
-                          </span>
-                          <h4 className="why-timeline-card-title font-extrabold text-brand-copper text-[16px] tracking-wide leading-none mt-1">
-                            {item.title}
-                          </h4>
-                        </div>
-                      </div>
-
-                      <p className="text-[16px] text-brand-copper leading-relaxed font-light mt-2">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Spacer on the opposite side to maintain layout on desktop */}
-                  <div className="hidden md:block w-[calc(50%-2.5rem)]"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= HERO SECTION (PREMIUM DARK SYSTEM) ================= */}
-      <section
-        id="hero-section"
-        className="relative bg-gray-200 text-brand-copper pt-20 pb-16 overflow-hidden px-4 sm:px-6 lg:px-8"
-      >
-        {/* Subtle mesh background grid */}
-        <div className="absolute"></div>
-        <div className="absolute"></div>
-        <div className="absolute"></div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
-          {/* Left Column */}
-          <div className="lg:col-span-7 space-y-8 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-copper/30 bg-brand-copper/5">
-              {/* <span className="w-1.5 h-1.5 rounded-full bg-brand-copper shadow-[0_0_8px_rgba(200,125,85,0.8)]"></span> */}
-              <span className="text-[13.2px] font-bold uppercase tracking-[0.25em] text-brand-copper">
-                Electrical Contract Solutions engineered for performance
-              </span>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight leading-[1.08] text-brand-copper">
-              {/* Precision Engineering.<br /> */}
-              {/* <span className="text-gradient-electric"> Electrification.</span> */}
-            </h1>
-
-            <p className="text-brand-copper text-[16px] sm:text-base max-w-xl leading-relaxed font-light">
-              Powering the industries of today and tomorrow through microstructural integrity and cadmium free metallurgy
-            </p>
-
-            <div className="flex flex-wrap gap-4 pt-2">
-              <a
-                href="#rfq-section"
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-gradient-to-r from-brand-electric-dark to-brand-electric hover:from-brand-electric hover:to-brand-electric-dark text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all shadow-[0_4px_20px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_25px_rgba(0,210,255,0.4)] cursor-pointer"
-              >
-                Request a Quote
-                <span className="ml-1 text-[16px]">→</span>       
-              </a>
-              <button
-                onClick={() => {
-                  navigate("/contact");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-transparent border border-white/20 hover:border-brand-electric hover:text-brand-copper text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer hover:bg-white/5"
-              >
-                Contact Us
-                <span className="ml-1 text-[16px]">→</span>
-              </button>
-            </div>
-
-            {/* Metrics Grid (Bordered segmented layout) */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-brand-card-border/50 mt-10">
-              {[
-                { value: "30+", label: "Years of Excellence" },
-                { value: "10+", label: "Countries Served" },
-                { value: "100%", label: "Quality Assurance" },
-              ].map((figure, index) => (
-                <div key={`${figure.label}-${index}`} className="space-y-1">
-                  <p className="text-3xl font-bold text-[#5c3321] tracking-tight">
-                    {figure.value}
-                  </p>
-                  <p className="text-[10px] text-[#5c3321] font-bold uppercase tracking-wider">
-                    {figure.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Floating Photo Column */}
-          <div className="lg:col-span-5 flex justify-center relative">
-            <div className="absolute -inset-4 bg-brand-electric/5 rounded-3xl blur-3xl pointer-events-none"></div>
-            <div className="relative w-full max-w-sm h-[320px] lg:h-[380px] rounded-2xl overflow-hidden border border-slate-700/30 shadow-2xl group animate-float">
-              <img
-                src={componentImage1}
-                alt="Precision electrical components"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#060a12]/80 via-transparent to-transparent"></div> */}
-              {/* Overlay Glass Badge */}
-              {/* <div className="absolute bottom-0 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
-                  Microstructural Integrity
-                </p>
-                <p className="text-[11px] text-brand-copper mt-1 font-light leading-relaxed">
-                  Electrical Contact Rivets and Assemblies Manufactured with OFHC Copper
-                  and Cadmium free Silver alloy wires
-                </p>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= ABOUT METALNOVA (PREMIUM LIGHT SYSTEM) ================= */}
-      <section
-        id="about-section"
-        className="py-20 bg-white text-brand-copper px-4 sm:px-6 lg:px-8"
-      >
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-          {/* Left Text */}
-          <div className="w-full lg:flex-[5] lg:min-w-0 space-y-6">
-            <div className="space-y-2">
-              {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">
-                About Us
-              </p> */}
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight leading-tight">
-                Engineering Precision.
-                <br />
-                Delivering Performance.
-              </h2>
-            </div>
-
-            <p className="text-brand-copper text-[16px] leading-relaxed font-light">
-              Metalnova manufactures electrical contact components for
-              automotive, electrical, electronics, and industrial applications.
-              From standard parts to customer specific designs, every component
-              is produced with a focus on dimensional accuracy, material
-              integrity, and consistency across every batch. We believe
-              manufacturing excellence is measured by consistently delivering
-              components that meet specifications, arrive on schedule, and
-              perform as expected.
-            </p>
-
-            <div className="pt-2">
-              <button
-                onClick={() => {
-                  navigate("/about");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 hover:border-brand-electric hover:bg-brand-electric/5 text-brand-copper hover:text-brand-copper text-[16px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer"
-              >
-                Know More
-                <span>→</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image Collage */}
-          <div className="w-full lg:flex-[4.375] lg:min-w-0 flex flex-col sm:flex-row gap-5 items-stretch">
-            {/* Large Image */}
-            <div className="w-full sm:flex-[7] sm:min-w-0 h-[290px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-white relative group flex items-center justify-center">
-              <video src={heroVideoSource} muted loop playsInline autoPlay className="w-full h-full object-cover"></video>
-            </div>
-
-            {/* Right Side Images */}
-            {/* <div className="w-full sm:flex-[5] sm:min-w-0 h-[290px] lg:h-[380px] flex flex-col gap-5">
-              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
-                <img
-                  src={about2}
-                  alt="Automated manufacturing"
-                  loading="lazy"
-                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-
-              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
-                <img
-                  src={about3}
-                  alt="Quality control"
-                  loading="lazy"
-                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= OUR PRODUCTS (PREMIUM DARK SYSTEM) ================= */}
+  {/* ================= OUR PRODUCTS (PREMIUM DARK SYSTEM) ================= */}
       <section
         id="home-products-section"
         className="relative py-16 bg-[#060a12] text-brand-copper overflow-hidden px-4 sm:px-6 lg:px-8 border-y border-slate-900"
@@ -519,7 +175,17 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto relative z-10 text-center space-y-4 mb-20">
          <div className="text-center">
-                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight">
+                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight mt-6">
+                        Metalnova
+                      </h1>
+
+                      <div
+                        className="mx-auto mt-3 w-40 h-[2.5px] rounded-full"
+                        style={{ backgroundColor: "#0172B0" }}
+                      ></div>
+          </div>
+         <div className="text-center">
+                      <h1 className="text-4xl sm:text-4xl lg:text-3xl font-black tracking-tight leading-tight mt-6">
                         Our{" "}
                         <span className="bg-gradient-to-r from-[#023C85] via-[#0172B0] to-[#023C85] bg-clip-text text-transparent">
                           Products
@@ -781,7 +447,353 @@ export default function Home() {
         </div>
       </section>
 
-    
+      {/* ================= ABOUT METALNOVA (PREMIUM LIGHT SYSTEM) ================= */}
+      <section
+        id="about-section"
+        className="py-20 bg-white text-brand-copper px-4 sm:px-6 lg:px-8"
+      >
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+          {/* Left Text */}
+          <div className="w-full lg:flex-[5] lg:min-w-0 space-y-6">
+            <div className="space-y-2">
+              {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">
+                About Us
+              </p> */}
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-copper tracking-tight leading-tight">
+                Engineering Precision.
+                <br />
+                Delivering Performance.
+              </h2>
+            </div>
+
+            <p className="text-brand-copper text-[16px] leading-relaxed font-light">
+              Metalnova manufactures electrical contact components for
+              automotive, electrical, electronics, and industrial applications.
+              From standard parts to customer specific designs, every component
+              is produced with a focus on dimensional accuracy, material
+              integrity, and consistency across every batch. We believe
+              manufacturing excellence is measured by consistently delivering
+              components that meet specifications, arrive on schedule, and
+              perform as expected.
+            </p>
+
+            <div className="pt-2">
+              <button
+                onClick={() => {
+                  navigate("/about");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 hover:border-brand-electric hover:bg-brand-electric/5 text-brand-copper hover:text-brand-copper text-[16px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer"
+              >
+                Know More
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Right Image Collage */}
+          <div className="w-full lg:flex-[4.375] lg:min-w-0 flex flex-col sm:flex-row gap-5 items-stretch">
+            {/* Large Image */}
+            <div className="w-full sm:flex-[7] sm:min-w-0 h-[290px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-white relative group flex items-center justify-center">
+              <video src={heroVideoSource} muted loop playsInline autoPlay className="w-full h-full object-cover"></video>
+            </div>
+
+            {/* Right Side Images */}
+            {/* <div className="w-full sm:flex-[5] sm:min-w-0 h-[290px] lg:h-[380px] flex flex-col gap-5">
+              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
+                <img
+                  src={about2}
+                  alt="Automated manufacturing"
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="flex-1 rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-white relative group flex items-center justify-center">
+                <img
+                  src={about3}
+                  alt="Quality control"
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= HERO SECTION (PREMIUM DARK SYSTEM) ================= */}
+      <section
+        id="hero-section"
+        className="relative bg-gray-200 text-brand-copper pt-20 pb-16 overflow-hidden px-4 sm:px-6 lg:px-8"
+      >
+        {/* Subtle mesh background grid */}
+        <div className="absolute"></div>
+        <div className="absolute"></div>
+        <div className="absolute"></div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+          {/* Left Column */}
+          <div className="lg:col-span-7 space-y-8 text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-copper/30 bg-brand-copper/5">
+              {/* <span className="w-1.5 h-1.5 rounded-full bg-brand-copper shadow-[0_0_8px_rgba(200,125,85,0.8)]"></span> */}
+              <span className="text-[13.2px] font-bold uppercase tracking-[0.25em] text-brand-copper">
+                Electrical Contact Solutions engineered for performance
+              </span>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight leading-[1.08] text-brand-copper">
+              {/* Precision Engineering.<br /> */}
+              {/* <span className="text-gradient-electric"> Electrification.</span> */}
+            </h1>
+
+            <p className="text-brand-copper text-[16px] sm:text-base max-w-xl leading-relaxed font-light">
+              Powering the industries of today and tomorrow through microstructural integrity and cadmium free metallurgy
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="#rfq-section"
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-gradient-to-r from-brand-electric-dark to-brand-electric hover:from-brand-electric hover:to-brand-electric-dark text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all shadow-[0_4px_20px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_25px_rgba(0,210,255,0.4)] cursor-pointer"
+              >
+                Request a Quote
+                <span className="ml-1 text-[16px]">→</span>       
+              </a>
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-transparent border border-white/20 hover:border-brand-electric hover:text-brand-copper text-brand-copper text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all cursor-pointer hover:bg-white/5"
+              >
+                Contact Us
+                <span className="ml-1 text-[16px]">→</span>
+              </button>
+            </div>
+
+            {/* Metrics Grid (Bordered segmented layout) */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-brand-card-border/50 mt-10">
+              {[
+                { value: "30+", label: "Years of Excellence" },
+                { value: "10+", label: "Countries Served" },
+                { value: "100%", label: "Quality Assurance" },
+              ].map((figure, index) => (
+                <div key={`${figure.label}-${index}`} className="space-y-1">
+                  <p className="text-3xl font-bold text-[#5c3321] tracking-tight">
+                    {figure.value}
+                  </p>
+                  <p className="text-[10px] text-[#5c3321] font-bold uppercase tracking-wider">
+                    {figure.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Floating Photo Column */}
+          <div className="lg:col-span-5 flex justify-center relative">
+            <div className="absolute -inset-4 bg-brand-electric/5 rounded-3xl blur-3xl pointer-events-none"></div>
+            <div className="relative w-full max-w-sm h-[320px] lg:h-[380px] rounded-2xl overflow-hidden border border-slate-700/30 shadow-2xl group animate-float">
+              <img
+                src={componentImage1}
+                alt="Precision electrical components"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#060a12]/80 via-transparent to-transparent"></div> */}
+              {/* Overlay Glass Badge */}
+              {/* <div className="absolute bottom-0 left-4 right-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-md border border-white/5 text-left">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-brand-copper">
+                  Microstructural Integrity
+                </p>
+                <p className="text-[11px] text-brand-copper mt-1 font-light leading-relaxed">
+                  Electrical Contact Rivets and Assemblies Manufactured with OFHC Copper
+                  and Cadmium free Silver alloy wires
+                </p>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* ================= WHY CHOOSE METALNOVA (ANIMATED TIMELINE) ================= */}
+      <section
+        id="why-choose-us"
+        className="relative py-28 bg-white text-brand-copper overflow-hidden px-4 sm:px-6 lg:px-8 border-t border-slate-100"
+      >
+        {/* Subtle decorative background glow shapes */}
+        <div className="why-choose-glow absolute top-0 right-0 w-[400px] h-[400px] bg-brand-copper/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="why-choose-glow absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-electric/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center space-y-4 mb-24">
+            {/* <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-brand-copper">Why Choose Us</p> */}
+            <div className="text-center">
+                      <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black tracking-tight leading-tight">
+                       Metalnova
+                          
+                      
+                      </h1>
+
+                      <div
+                        className="mx-auto mt-3 w-30 h-[2.5px] rounded-full"
+                        style={{ backgroundColor: "#0172B0" }}
+                      ></div>
+          </div>
+           
+            <p className="text-brand-copper text-[16px] max-w-xl mx-auto font-light leading-relaxed">
+              From precise metallurgy to certified delivery, explore our core
+              strengths mapped across our performance engineering timeline.
+            </p>
+          </div>
+
+          {/* Timeline Center Area */}
+          <div className="relative max-w-4xl mx-auto">
+            {/* Vertical Line with flowing animated gradient */}
+            <div
+              className="absolute left-6 md:left-1/2 top-4 bottom-4 w-1 rounded-full transform md:-translate-x-1/2 overflow-hidden pointer-events-none"
+              style={{ backgroundColor: "#0177b5" }}
+            >
+              <div
+                className="w-full h-full rounded-full"
+                style={{ backgroundColor: "#0177b5" }}
+              ></div>
+            </div>
+
+            {/* Timeline Steps */}
+            <div className="space-y-10 md:space-y-12">
+              {[
+                {
+                  title: "Precision Manufacturing",
+                  // subtitle: "Precision That Powers Performance",
+                  desc: "Every electrical contact component is manufactured to precise dimensional tolerances using carefully controlled processes, ensuring consistent quality, reliable performance, and uniformity across production batches",
+                  icon: (
+                    <svg
+                      className="w-5 h-5 text-brand-copper"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  title: "Metallurgical Expertise",
+                  // subtitle: "Advanced Material Expertise",
+                  desc: "An in-depth understanding of metallurgical science guides the precision manufacturing of our solid silver and copper contact rivets, bimetal and trimetal contact rivets, clad strips, and contact assemblies—addressing today’s application needs while preparing for tomorrow’s electrical technologies.",
+                  icon: (
+                    <svg
+                      className="w-5 h-5 text-brand-copper"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  title: "Quality You Can Rely On",
+                  // subtitle: "Uncompromising Quality Standards",
+                  desc: "Our ISO 9001:2015-certified quality management system integrates material verification, dimensional inspection, and performance testing throughout production, supporting consistent product quality and compliance with applicable CE and RoHS requirements.",
+                  icon: (
+                    <svg
+                      className="w-5 h-5 text-brand-copper"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  title: "Sustainable Manufacturing",
+                  // subtitle: "Sustainable & Future-Ready Solutions",
+                  desc: "Cadmium-free contact materials, efficient use of precious metals, and responsible metal recovery and recycling help us reduce waste and conserve resources while maintaining product quality and performance.",
+                  icon: (
+                    <svg
+                      className="w-5 h-5 text-brand-copper"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                      />
+                    </svg>
+                  ),
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className={`relative flex flex-col md:flex-row items-start md:items-center ${i % 2 === 0 ? "" : "md:flex-row-reverse"}`}
+                >
+                  {/* Timeline Center Bullet with Pulse Animation */}
+                  <div className="absolute left-6 md:left-1/2 top-4 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex items-center justify-center">
+                    <span className="w-8 h-8 rounded-full border-2 border-[#0177b5] bg-white shadow-md flex items-center justify-center transition-transform duration-300 relative">
+                      {/* Outer pulse wave */}
+                      <span className="absolute inset-0 rounded-full bg-[#0177b5]/20 animate-ping opacity-75"></span>
+                      <span className="w-3 h-3 rounded-full bg-[#0177b5] z-10"></span>
+                    </span>
+                  </div>
+
+                  {/* Timeline Card */}
+                  <div
+                    className={`w-full md:w-[calc(50%-2.5rem)] pl-16 md:pl-0 ${i % 2 === 0 ? "md:text-right md:pr-10" : "md:text-left md:pl-10"}`}
+                  >
+                    <div className="why-timeline-card group bg-[#f8fafc] border border-slate-100 hover:border-brand-copper/25 rounded-2xl p-6 shadow-sm hover:shadow-[0_15px_30px_rgba(0,0,0,0.03)] transition-all duration-300 relative overflow-hidden text-left">
+                      <div className="why-timeline-card-heading flex gap-3 items-center mb-3">
+                        <div
+                          className={`w-8 h-8 rounded-lg ${i % 2 === 0 ? "bg-brand-copper/5 border border-brand-copper/20" : "bg-brand-electric/5 border border-brand-electric/20"} flex items-center justify-center`}
+                        >
+                          {item.icon}
+                        </div>
+                        <div>
+                          <span className="text-[10px] font-bold text-brand-copper uppercase tracking-widest">
+                            {item.subtitle}
+                          </span>
+                          <h4 className="why-timeline-card-title font-extrabold text-brand-copper text-[16px] tracking-wide leading-none mt-1">
+                            {item.title}
+                          </h4>
+                        </div>
+                      </div>
+
+                      <p className="text-[16px] text-brand-copper leading-relaxed font-light mt-2">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Spacer on the opposite side to maintain layout on desktop */}
+                  <div className="hidden md:block w-[calc(50%-2.5rem)]"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ================= CERTIFICATIONS (DARK THEME WITH QUALITY VIBE) ================= */}
       <section
@@ -1269,7 +1281,7 @@ export default function Home() {
     {/* Header */}
     <div className="flex justify-center gap-4 mb-7">
       <div className="">
-        <p className="text-[18px] lg:text-[18px] !font-extrabold text-slate-900 uppercase leading-tight">
+        <p className="text-[18px] lg:text-[16px] !font-extrabold text-slate-900 uppercase leading-tight">
           Head Office &
           
           Manufacturing Unit
@@ -1315,7 +1327,7 @@ export default function Home() {
     
 
       <div>
-        <p className="text-[18px] lg:text-[18px] !font-extrabold text-slate-900 uppercase leading-tight">
+        <p className="text-[18px] lg:text-[16px] !font-extrabold text-slate-900 uppercase leading-tight">
           Sales Office
         </p>
 
@@ -1363,7 +1375,7 @@ export default function Home() {
    
 
       <div>
-        <p className="text-[18px] lg:text-[18px] !font-extrabold text-slate-900 uppercase leading-tight">
+        <p className="text-[18px] lg:text-[16px] !font-extrabold text-slate-900 uppercase leading-tight">
           International
         </p>
 
