@@ -837,7 +837,7 @@ export default function Home() {
             }}
             className="inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-brand-copper to-brand-copper-dark hover:from-brand-copper-dark hover:to-brand-copper text-white text-[11px] font-bold uppercase tracking-widest rounded-lg transition-all duration-300 shadow-[0_4px_20px_rgba(200,125,85,0.25)] hover:shadow-[0_4px_25px_rgba(200,125,85,0.4)] cursor-pointer"
           >
-            View Our Quality Standards
+            View Our Quality Standards  
             <span className="ml-2 text-[16px]">→</span>
           </button>
         </div>
@@ -1267,9 +1267,9 @@ export default function Home() {
   <div className="group bg-white rounded-[24px] p-7 lg:p-8 border border-slate-200 shadow-[0_10px_35px_rgba(15,23,42,0.08)] hover:shadow-[0_15px_45px_rgba(15,23,42,0.12)] hover:-translate-y-1 transition-all duration-300">
 
     {/* Header */}
-    <div className="flex  gap-4 mb-7">
-      <div>
-        <p className="text-[18px] lg:text-[19px] !font-extrabold text-slate-900 uppercase leading-tight">
+    <div className="flex justify-center gap-4 mb-7">
+      <div className="">
+        <p className="text-[18px] lg:text-[18px] !font-extrabold text-slate-900 uppercase leading-tight">
           Head Office &
           
           Manufacturing Unit
@@ -1315,7 +1315,7 @@ export default function Home() {
     
 
       <div>
-        <p className="text-[18px] lg:text-[19px] !font-extrabold text-slate-900 uppercase leading-tight">
+        <p className="text-[18px] lg:text-[18px] !font-extrabold text-slate-900 uppercase leading-tight">
           Sales Office
         </p>
 
@@ -1363,7 +1363,7 @@ export default function Home() {
    
 
       <div>
-        <p className="text-[18px] lg:text-[19px] !font-extrabold text-slate-900 uppercase leading-tight">
+        <p className="text-[18px] lg:text-[18px] !font-extrabold text-slate-900 uppercase leading-tight">
           International
         </p>
 
